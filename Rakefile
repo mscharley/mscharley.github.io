@@ -4,7 +4,7 @@ task :default => [:sass, :jekyll]
 
 desc "Builds all SASS scripts"
 task :sass do
-  sh 'sass', '--update', 'sass:_site/css'
+  sh 'sass', '--update', 'sass:_src/css'
 end
 
 desc "Compiles site with Jekyll for testing"
