@@ -1,2 +1,7 @@
 pygments: true
 safe: true
+exclude:
+  LICENSE.md
+  README.md
+  Rakefile
+  sass
