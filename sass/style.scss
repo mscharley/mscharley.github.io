@@ -8,11 +8,31 @@
 *   http://matt.scharley.me/license.html for more information.                 *
 \******************************************************************************/
 
+@import 'mixins';
+@import 'reset';
+
 // Pull in syntax styling
 @import 'syntax';
 
-a.license-image {
-  text-decoration: none;
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+  color: #000;
+}
+
+#container {
+  width: 940px;
+  padding: 1.2em;
+  @include box-sizing(border-box);
+  margin: 0 auto;
+  border-left: 3px solid #666;
+  border-right: 3px solid #666;
+  background: #fff;
+
+  a.license-image {
+    text-decoration: none;
+  }
 }
 
 .fork-me {
