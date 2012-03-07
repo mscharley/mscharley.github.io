@@ -59,7 +59,7 @@ a {
 
   @include page-width;
   @include box-sizing(border-box);
-  @include box-shadow(0, 0, #999, $shadowSize, $shadowSize / 2);
+  @include box-shadow(0px, 0px, #999, $shadowSize, $shadowSize / 2);
   margin: -($shadowSize * 1.5) auto 0 auto;
   padding-top: $shadowSize * 1.5;
   background: #fff;
