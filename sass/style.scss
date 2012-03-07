@@ -10,3 +10,16 @@
 
 // Pull in syntax styling
 @import 'syntax';
+
+a.license-image {
+  text-decoration: none;
+}
+
+.fork-me {
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+  }
+}
