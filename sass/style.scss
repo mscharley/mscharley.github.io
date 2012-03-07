@@ -14,8 +14,6 @@
 // Pull in syntax styling
 @import 'syntax';
 
-$pageWidth: 940px;
-
 html, body {
   margin: 0;
   padding: 0;
@@ -40,7 +38,7 @@ a {
   z-index: 99;
 
   .inner {
-    width: $pageWidth;
+    @include page-width;
     @include box-sizing(border-box);
     margin: 0 auto;
     padding: 0.5em 1em;
@@ -54,8 +52,8 @@ a {
 
 #page {
   $shadowSize: 5px;
-  
-  width: $pageWidth;
+
+  @include page-width;
   @include box-sizing(border-box);
   @include box-shadow(0, 0, #999, $shadowSize, $shadowSize / 2);
   margin: -($shadowSize * 1.5) auto 0 auto;
@@ -71,6 +69,7 @@ a {
     color: #888888;
     padding: 1.5em 3em;
     font-size: small;
+    overflow: hidden;
 
     a {
       color: #bbbbbb;

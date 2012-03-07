@@ -10,3 +10,8 @@
   -webkit-box-shadow: $left $top $blurRadius $spread $color;
   box-shadow: $left $top $blurRadius $spread $color;
 }
+
+@mixin page-width {
+  min-width: 940px;
+  width: 60%;
+}
