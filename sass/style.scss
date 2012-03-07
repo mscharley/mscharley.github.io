@@ -22,13 +22,18 @@ html, body {
 }
 
 #container {
+  $shadowSize: 5px;
+  
   width: 940px;
-  padding: 1.2em;
   @include box-sizing(border-box);
-  margin: 0 auto;
-  border-left: 3px solid #666;
-  border-right: 3px solid #666;
+  @include box-shadow(0, 0, #999, $shadowSize, $shadowSize / 2);
+  margin: -($shadowSize * 1.5) auto 0 auto;
+  padding-top: $shadowSize * 1.5;
   background: #fff;
+
+  #main {
+    padding: 1.2em;
+  }
 
   a.license-image {
     text-decoration: none;

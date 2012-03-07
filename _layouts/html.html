@@ -8,7 +8,13 @@
 </head>
 <body>
   <div id="container">
-    {{ content }}
+    <div id="main">
+      {{ content }}
+    </div>
+
+    <div id="footer">
+      {% include cc.html %}
+    </div>
   </div>
 
   <a href="http://github.com/mscharley" class="fork-me">

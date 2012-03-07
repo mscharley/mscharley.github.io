@@ -4,3 +4,9 @@
   -moz-box-sizing: $type;
   box-sizing: $type;
 }
+
+@mixin box-shadow($left, $top, $color, $blurRadius: 0px, $spread: 0px) {
+  -moz-box-shadow: $left $top $blurRadius $spread $color;
+  -webkit-box-shadow: $left $top $blurRadius $spread $color;
+  box-shadow: $left $top $blurRadius $spread $color;
+}
