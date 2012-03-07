@@ -17,7 +17,7 @@ Content Licence
 ---------------
 
 The following directories and their contents are copyright Matthew Scharley
-and released under a [**CC-BY-NC-SA**][cc-license] license:
+and released under a [CC-BY-NC-SA][cc-license] license:
 
 * src/\_posts
 * src/images
