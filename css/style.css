@@ -76,6 +76,7 @@ html, body { margin: 0; padding: 0; background: #ddd; color: #000; font-family: 
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
+a img { border: 0; }
 
 #banner { width: 100%; background: #ffd50a; color: #444; position: relative; z-index: 99; }
 #banner .inner { min-width: 940px; width: 60%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 auto; padding: 0.5em 1em; text-align: center; }
