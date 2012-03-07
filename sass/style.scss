@@ -14,6 +14,8 @@
 // Pull in syntax styling
 @import 'syntax';
 
+$pageWidth: 940px;
+
 html, body {
   margin: 0;
   padding: 0;
@@ -22,10 +24,30 @@ html, body {
   font-family: serif;
 }
 
+#banner {
+  width: 100%;
+  background: #ffd50a;
+  color: #444;
+  position: relative;
+  z-index: 99;
+
+  .inner {
+    width: $pageWidth;
+    @include box-sizing(border-box);
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+
+  strong {
+    color: #ff0000;
+  }
+}
+
 #page {
   $shadowSize: 5px;
   
-  width: 940px;
+  width: $pageWidth;
   @include box-sizing(border-box);
   @include box-shadow(0, 0, #999, $shadowSize, $shadowSize / 2);
   margin: -($shadowSize * 1.5) auto 0 auto;

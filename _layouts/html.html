@@ -5,9 +5,22 @@
   <title>{{ page.title }}</title>
 
   <link type="text/css" rel="stylesheet" href="/css/style.css" />
+  <!--[if lt IE 9]>
+  <script>var a = ['header','footer','section','aside','nav','article','hgroup','time'];for(a as b){document.createElement(a[b]);}</script>
+  <![endif]-->
+
 </head>
 <body>
-  <div id="page">
+<!--[if lt IE 9]>
+<noscript>
+  <div id="banner"><div class="inner">
+    <strong>Warning!</strong>
+    Because your browser does not support HTML5, some elements are simulated using JavaScript.
+    Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+  </div></div>
+</noscript>
+<![endif]-->
+<div id="page">
     <section id="main">
       {{ content }}
     </section>
