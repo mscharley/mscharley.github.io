@@ -2,6 +2,9 @@
 desc "Builds everything"
 task :default => [:clean, :sass, :jekyll]
 
+desc "Builds Jekyll in a clean environment"
+task :'jekyll-clean' => [:clean, :jekyll]
+
 desc "Builds all SASS scripts"
 task :sass do
   sh 'sass', '-C', '-f', '-t', 'compact', '--update', 'sass:css'
