@@ -74,14 +74,18 @@ section, article, aside, footer, header, nav, hgroup { display: block; }
 
 html, body { margin: 0; padding: 0; background: #ddd; color: #000; font-family: serif; }
 
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
 #banner { width: 100%; background: #ffd50a; color: #444; position: relative; z-index: 99; }
 #banner .inner { width: 940px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: 0 auto; padding: 0.5em 1em; text-align: center; }
 #banner strong { color: #ff0000; }
 
 #page { width: 940px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -moz-box-shadow: 0 0 5px 2.5px #999999; -webkit-box-shadow: 0 0 5px 2.5px #999999; box-shadow: 0 0 5px 2.5px #999999; margin: -7.5px auto 0 auto; padding-top: 7.5px; background: #fff; }
 #page #main { padding: 1.2em; }
-#page > footer { background: #999; color: #fff; }
-#page > footer a { color: #ddd; }
-#page a.license-image { text-decoration: none; }
+#page > footer { background: #444444; color: #888888; padding: 1.5em 3em; font-size: small; }
+#page > footer a { color: #bbbbbb; }
+#page > footer a:hover { color: #dddddd; }
+#page > footer a.license-image { text-decoration: none; float: left; margin-right: 0.7em; }
 
 a.fork-me img { position: absolute; top: 0; right: 0; border: 0; }

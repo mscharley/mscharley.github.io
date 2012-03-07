@@ -24,6 +24,14 @@ html, body {
   font-family: serif;
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 #banner {
   width: 100%;
   background: #ffd50a;
@@ -59,16 +67,24 @@ html, body {
   }
 
   > footer {
-    background: #999;
-    color: #fff;
-    
-    a {
-      color: #ddd;
-    }
-  }
+    background: #444444;
+    color: #888888;
+    padding: 1.5em 3em;
+    font-size: small;
 
-  a.license-image {
-    text-decoration: none;
+    a {
+      color: #bbbbbb;
+
+      &:hover {
+        color: #dddddd;
+      }
+
+      &.license-image {
+        text-decoration: none;
+        float: left;
+        margin-right: 0.7em;
+      }
+    }
   }
 }
 
