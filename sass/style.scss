@@ -19,9 +19,10 @@ html, body {
   padding: 0;
   background: #ddd;
   color: #000;
+  font-family: serif;
 }
 
-#container {
+#page {
   $shadowSize: 5px;
   
   width: 940px;
@@ -35,12 +36,21 @@ html, body {
     padding: 1.2em;
   }
 
+  > footer {
+    background: #999;
+    color: #fff;
+    
+    a {
+      color: #ddd;
+    }
+  }
+
   a.license-image {
     text-decoration: none;
   }
 }
 
-.fork-me {
+a.fork-me {
   img {
     position: absolute;
     top: 0;
