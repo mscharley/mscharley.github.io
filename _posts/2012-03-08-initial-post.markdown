@@ -3,7 +3,7 @@ title: Hello World!
 layout: post
 ---
 
-Everyone writes one these, right? Welcome, welcome, yada yada, all that sort of thing.
+Everyone writes one of these, right? Welcome, welcome, yada yada, all that sort of thing.
 
 First up, I want to get into what this blog will be about. This site will mostly be a
 coding blog; things I've done, discovered or otherwise cool stuff to do with the 
