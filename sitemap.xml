@@ -25,7 +25,7 @@ priority: 0.7
     <url>
         <loc>http://{{ page.domain }}{{ post.url }}</loc>
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>{{ page.priority }}</priority>
     </url>
     {% endfor %}
