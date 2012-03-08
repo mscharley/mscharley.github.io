@@ -58,10 +58,30 @@ end
 
 desc "Publishes the currently checked out draft branch to master"
 task :publish do
-  # git checkout master
-  # git merge --squash -m "Publishing title" drafts/blargh
+  branch = git_branch
+  if branch.match(/^drafts\//).nil?
+    puts "You must be on at the head of a draft branch."
+    return 1
+  end
+  if !`git diff --cached --name-only`.strip.empty?
+    puts "You must be on a clean checkout, or at least have an empty index."
+    return 1
+  end
+  title = branch.gsub(/^drafts\//, '')
+  git 'checkout', 'master'
+  git 'merge', '--squash', branch
+  git 'commit', '-m', "Publishing '#{title}'"
+  git 'branch', '-D', branch
 end
 
 def git(*args)
   sh 'git', *args
+end
+
+def git_branch
+  branch = `git branch -a 2> /dev/null | grep "^* " | awk '{print $2}'`.strip
+  if branch == '(no branch)' || !branch
+    branch = nil
+  end
+  branch
 end
