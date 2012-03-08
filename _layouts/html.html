@@ -6,7 +6,7 @@
 
   <link type="text/css" rel="stylesheet" href="/css/style.css">
   <!--[if lt IE 9]>
-  <script>var a = ['header','footer','section','aside','nav','article','hgroup','time'];for(var b in a){document.createElement(a[b]);}</script>
+  <script>var a = ['header','footer','section','aside','nav','article','hgroup'];for(var b in a){document.createElement(a[b]);}</script>
   <![endif]-->
 
 </head>
@@ -32,5 +32,8 @@
       </a>
     </footer>
   </div>
+  <footer>
+    Last updated: {{ site.time | date_to_xmlschema }}
+  </footer>
 </body>
 </html>

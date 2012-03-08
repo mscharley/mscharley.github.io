@@ -14,12 +14,21 @@
 // Pull in syntax styling
 @import 'syntax';
 
+$shadowSize: 5px;
+
 body {
   margin: 0;
   padding: 0;
   background: #dddddd;
   color: #000000;
   font-family: serif;
+
+  > footer {
+    margin: $shadowSize auto 0 auto;
+    @include page-width;
+    font-size: x-small;
+    text-align: right;
+  }
 }
 
 a {
@@ -55,7 +64,6 @@ a {
 }
 
 #page {
-  $shadowSize: 5px;
 
   @include page-width;
   @include box-sizing(border-box);
