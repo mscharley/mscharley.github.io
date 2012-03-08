@@ -6,5 +6,6 @@ exclude:
   Rakefile
   sass
 
+domain: matt.scharley.me
 disqus:
   shortname: msme

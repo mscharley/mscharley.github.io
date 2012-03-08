@@ -1,24 +1,23 @@
 ---
 layout: nil
-domain: matt.scharley.me
 priority: 0.7
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://{{ page.domain }}/</loc>
+        <loc>http://{{ site.domain }}/</loc>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://{{ page.domain }}/license.html</loc>
+        <loc>http://{{ site.domain }}/license.html</loc>
         <lastmod>2012-03-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.2</priority>
     </url>
     {% for post in site.posts %}
     <url>
-        <loc>http://{{ page.domain }}{{ post.url }}</loc>
+        <loc>http://{{ site.domain }}{{ post.url }}</loc>
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>{{ page.priority }}</priority>
