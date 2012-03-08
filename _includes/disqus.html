@@ -1,6 +1,10 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
   var disqus_shortname = '{{ site.disqus.shortname }}';
+  var disqus_identifier = '{{ page.url }}';
+  if (window.location.hostname.match(/local(?:host)?$/)) {
+    var disqus_developer = true;
+  }
 
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
