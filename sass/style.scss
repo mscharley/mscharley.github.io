@@ -14,7 +14,7 @@
 // Pull in syntax styling
 @import 'syntax';
 
-html, body {
+body {
   margin: 0;
   padding: 0;
   background: #dddddd;
@@ -65,7 +65,7 @@ a {
   background: #fff;
 
   #main {
-    padding: 1.2em;
+    margin: 1.2em 5%;
   }
 
   > footer {
