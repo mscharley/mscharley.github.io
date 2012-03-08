@@ -19,14 +19,14 @@ Content Licence
 The following directories and their contents are copyright Matthew Scharley
 and released under a [CC-BY-NC-SA][cc-license] license:
 
-* src/\_posts
-* src/images
+* \_posts
+* images
 
 Source Code Licence
 -------------------
 
 All other directories and files as well as any source code snippets that may 
-appear as part of posts in the src/\_posts directory mentioned above are 
+appear as part of posts in the \_posts directory mentioned above are 
 released under an MIT license. See below for details:
 
 > Copyright (C) 2012 by Matthew Scharley
