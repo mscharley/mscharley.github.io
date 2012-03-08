@@ -73,7 +73,7 @@ section, article, aside, footer, header, nav, hgroup { display: block; }
 .highlight .il { color: #009999; }
 
 body { margin: 0; padding: 0; background: #dddddd; color: #000000; font-family: serif; }
-body > footer { margin: 5px auto 0 auto; min-width: 960px; max-width: 1080px; width: 60%; font-size: x-small; text-align: right; }
+body > footer { margin: 5px auto 0 auto; padding-right: 5px; min-width: 960px; max-width: 1080px; width: 60%; font-size: x-small; text-align: right; }
 
 a { color: #444; }
 a:hover { color: #9c0726; }

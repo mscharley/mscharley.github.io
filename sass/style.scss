@@ -25,6 +25,7 @@ body {
 
   > footer {
     margin: $shadowSize auto 0 auto;
+    padding-right: $shadowSize;
     @include page-width;
     font-size: x-small;
     text-align: right;
