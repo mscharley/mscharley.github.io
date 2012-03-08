@@ -19,6 +19,6 @@ and enjoy.
 
 I intend to prod Disqus with a 10" pole and perhaps get that integrated into this site.
 
-Or perhaps not.
+Or perhaps not (looks like I did though).
 
   [source]: http://github.com/mscharley/mscharley.github.com/
