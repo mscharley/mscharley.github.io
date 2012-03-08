@@ -5,3 +5,6 @@ exclude:
   README.md
   Rakefile
   sass
+
+disqus:
+  shortname: msme
