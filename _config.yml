@@ -6,6 +6,7 @@ exclude:
   Rakefile
   sass
 
+title: Matthew Scharley
 domain: matt.scharley.me
 disqus:
   shortname: msme
