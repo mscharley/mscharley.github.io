@@ -21,4 +21,8 @@ I intend to prod Disqus with a 10" pole and perhaps get that integrated into thi
 
 Or perhaps not (looks like I did though).
 
+Better navigation and more features will be forthcoming, but I wanted to get a v1.0 up
+as soon as possible so I can get back into this. I really enjoyed it last time around,
+and hopefully you'll find something of use here.
+
   [source]: http://github.com/mscharley/mscharley.github.com/
