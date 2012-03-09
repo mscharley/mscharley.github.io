@@ -86,10 +86,12 @@ a img { border: 0; }
 #container { min-width: 960px; max-width: 1080px; width: 60%; margin: -7.5px auto 0 auto; position: relative; }
 #container nav.site { position: absolute; top: 1.2em; right: 100%; z-index: 5; }
 #container nav.site ul, #container nav.site li { margin: 0; padding: 0; list-style: none; }
-#container nav.site ul { display: block; -webkit-transform-origin: 100% 0px; -moz-transform-origin: 100% 0px; -ms-transform-origin: 100% 0px; transform-origin: 100% 0px; -webkit-transform: rotate(90deg) translate(100%, 0px); -moz-transform: rotate(90deg) translate(100%, 0px); -ms-transform: rotate(90deg) translate(100%, 0px); transform: rotate(90deg) translate(100%, 0px); white-space: nowrap; }
+#container nav.site ul { display: block; -webkit-transform-origin: 100% 0px; -moz-transform-origin: 100% 0px; -ms-transform-origin: 100% 0px; transform-origin: 100% 0px; -webkit-transform: rotate(90deg) translate(100%, 0px); -moz-transform: rotate(90deg) translate(100%, 0px); -ms-transform: rotate(90deg) translate(100%, 0px); -sand-transform: rotate(90deg) translate(100%, 0px); transform: rotate(90deg) translate(100%, 0px); white-space: nowrap; }
 #container nav.site ul li { font-size: small; display: inline-block; white-space: normal; }
+#container nav.site ul li a { display: block; padding: 7px 20px 5px 10px; border: 1px solid #666; border-top: 0px; background: #444; color: #bbb; text-decoration: none; -moz-box-shadow: 2px 2px 2px 0px #999999; -webkit-box-shadow: 2px 2px 2px 0px #999999; box-shadow: 2px 2px 2px 0px #999999; }
+#container nav.site ul li a:hover { background: #333; color: #ddd; }
 
-#page { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -moz-box-shadow: 0px 0px 5px 2.5px #999999; -webkit-box-shadow: 0px 0px 5px 2.5px #999999; box-shadow: 0px 0px 5px 2.5px #999999; padding-top: 7.5px; background: #fff; z-index: 10; }
+#page { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -moz-box-shadow: 0px 0px 5px 2.5px #999999; -webkit-box-shadow: 0px 0px 5px 2.5px #999999; box-shadow: 0px 0px 5px 2.5px #999999; padding-top: 7.5px; background: #fff; position: relative; z-index: 10; }
 #page > article, #page > section { margin: 1.2em 5%; }
 #page > article ul li > p:first-child, #page > article ol li > p:first-child, #page > section ul li > p:first-child, #page > section ol li > p:first-child { margin-top: 0px; }
 #page > article ul li > p:last-of-type, #page > article ol li > p:last-of-type, #page > section ul li > p:last-of-type, #page > section ol li > p:last-of-type { margin-bottom: 0px; }
