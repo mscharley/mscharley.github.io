@@ -11,7 +11,7 @@
   <script>var a = ['header','footer','section','aside','nav','article','hgroup'];for(var b in a){document.createElement(a[b]);}</script>
   <script type="text/javascript" src="/js/EventHelpers.js"></script>
   <script type="text/javascript" src="/js/cssQuery-p.js"></script>
-  <script type="text/javascript" src="/js/jcoglan.com/sylvester.js"></script>
+  <script type="text/javascript" src="/js/sylvester.js"></script>
   <script type="text/javascript" src="/js/cssSandpaper.js"></script>
   <![endif]-->
 
@@ -27,17 +27,20 @@
   </div></div>
 </noscript>
 <![endif]-->
-  <div id="page">
-    {{ content }}
+  <div id="container">
+    {% include navigation.html %}
+    <div id="page">
+      {{ content }}
 
-    <footer>
-      {% include copyright.html %}
+      <footer>
+        {% include copyright.html %}
 
-      <a href="http://github.com/mscharley" class="fork-me">
-        <img src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
-             alt="Fork me on GitHub">
-      </a>
-    </footer>
+        <a href="http://github.com/mscharley" class="fork-me">
+          <img src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+               alt="Fork me on GitHub">
+        </a>
+      </footer>
+    </div>
   </div>
   <footer>
     Last updated: {{ site.time | date_to_xmlschema }}

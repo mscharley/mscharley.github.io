@@ -72,7 +72,7 @@ var cssSandpaper = new function(){
         fixLinearGradients();
         
         fixBackgrounds();
-       	fixColors();
+        fixColors();
         fixOpacity();
         setClasses();
         //fixBorderRadius();
