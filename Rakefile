@@ -36,7 +36,7 @@ task :post, :title do |t, args|
 
   # Actually generate the new branch and file
   git "checkout", "-b", "drafts/#{safe_title}", "master"
-  sh 'mkdir', '_posts'
+  sh 'mkdir', '_posts' if !File.exists? '_posts'
   sh "touch", file
   git "add", "-N", file
   puts "Writing headers..."
