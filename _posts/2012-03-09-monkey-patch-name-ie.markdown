@@ -8,9 +8,9 @@ tags:
 ---
 
 One of the better [ways of detecting an object's type name in Javascript][so-name-of-object]
-is `obj.constructor.name`. Unfortunately, Internet Explorer doesn't support
-the non-standardised, though rather standard [`Function.name`][Function.name]
-property.
+is `obj.constructor.name`. It's also the way that the Drupal states API does it.
+Unfortunately, Internet Explorer doesn't support the non-standardised, though
+rather standard [`Function.name`][Function.name] property.
 
 So, here's how to monkey patch it into IE9 and above. IE8 doesn't support
 [`defineProperty`][defineProperty] properly and earlier versions don't support 
