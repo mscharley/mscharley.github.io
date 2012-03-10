@@ -75,6 +75,24 @@ a {
 
   > article, > section {
     margin: 1.2em 5%;
+
+    ul, ol {
+      li {
+        > p {
+          &:first-child {
+            margin-top: 0px;
+          }
+
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+
+          + ul {
+            margin-top: 0;
+          }
+        }
+      }
+    }
   }
 
   > footer {
