@@ -11,6 +11,16 @@
 @import 'mixins';
 @import 'reset';
 
+@media screen {
+  @import 'screen';
+}
+@media handheld {
+  @import 'handheld';
+}
+@media screen and (max-width: 1024px) {
+  @import 'handheld';
+}
+
 // Pull in syntax styling
 @import 'syntax';
 
