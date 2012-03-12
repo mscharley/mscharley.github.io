@@ -6,6 +6,13 @@ layout: html
     <hgroup>
       <h1>{{ page.title }}</h1>
       {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
+      <p class="posted-time">
+        {% if page.updated %}
+          {{ page.updated | date: '%A, %d %B %Y - %H:%M' }}
+        {% else %}
+          {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
+        {% endif %}
+      </p>
     </hgroup>
   </header>
 

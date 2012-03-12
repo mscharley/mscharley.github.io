@@ -18,7 +18,11 @@ priority: 0.7
     {% for post in site.posts %}
     <url>
         <loc>http://{{ site.domain }}{{ post.url }}</loc>
+        {% if post.updated %}
+        <lastmod>{{ post.updated | date_to_xmlschema }}</lastmod>
+        {% else %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        {% endif %}
         <changefreq>monthly</changefreq>
         <priority>{{ page.priority }}</priority>
     </url>
