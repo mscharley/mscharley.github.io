@@ -48,6 +48,7 @@ nav.site {
 
 body {
   > * {
-    @include page-width;
+    width: 960px;
+    @include box-sizing(border-box);
   }
 }

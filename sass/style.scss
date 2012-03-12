@@ -65,7 +65,7 @@ a {
   z-index: 99;
 
   .inner {
-    @include page-width;
+    width: 960px;
     @include box-sizing(border-box);
     margin: 0 auto;
     padding: 0.5em 1em;

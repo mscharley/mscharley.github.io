@@ -35,8 +35,7 @@ nav.site {
 
 body {
   > * {
-    min-width: 0;
-    max-width: none;
+    min-width: 640px;
     width: 100%;
   }
 }

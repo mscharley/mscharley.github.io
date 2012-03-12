@@ -17,12 +17,6 @@
   box-shadow: none;
 }
 
-@mixin page-width {
-  min-width: 960px;
-  max-width: 1080px;
-  width: 60%;
-}
-
 @mixin transform-origin($x, $y) {
   -webkit-transform-origin: $x $y;
   -moz-transform-origin: $x $y;
