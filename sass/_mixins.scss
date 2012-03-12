@@ -17,6 +17,12 @@
   box-shadow: none;
 }
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
 @mixin transform-origin($x, $y) {
   -webkit-transform-origin: $x $y;
   -moz-transform-origin: $x $y;

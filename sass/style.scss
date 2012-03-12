@@ -127,9 +127,35 @@ a {
         color: #444;
       }
       
-      p {
+      p, nav.tags {
         font-size: 0.75em;
         margin: 0.5em 1.6em;
+      }
+
+      nav.tags {
+        
+        ul, li {
+          margin: 0;
+          padding: 0;
+          display: inline;
+        }
+          
+        li {
+          list-style: none;
+
+          // Most of this styling should be moved to the link when we manage to link these to tag pages
+          padding: 0.3em;
+          cursor: pointer;
+          line-height: 1.8; // Bump line-height to match padding
+          margin-right: 0.4em;
+          background: #eee;
+          border: 1px solid #333;
+          @include border-radius(0.4em);
+
+          &:hover {
+            background: #ccc;
+          }
+        }
       }
     }
   }
