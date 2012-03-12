@@ -5,6 +5,8 @@ exclude:
   README.md
   Rakefile
   sass
+  CNAME
+  Guardfile
 
 title: Matthew Scharley
 domain: matt.scharley.me
