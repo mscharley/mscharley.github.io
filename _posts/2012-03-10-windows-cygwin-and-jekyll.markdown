@@ -2,9 +2,9 @@
 title: Windows, Cygwin and Jekyll
 layout: post
 tags:
-  cygwin
-  windows
-  jekyll
+- cygwin
+- windows
+- jekyll
 ---
 
 A bit of background
