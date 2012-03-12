@@ -21,7 +21,6 @@
   -webkit-transform-origin: $x $y;
   -moz-transform-origin: $x $y;
   -ms-transform-origin: $x $y;
-  //-sand-transform-origin: $x $y;
   transform-origin: $x $y;
 }
 
@@ -29,6 +28,5 @@
   -webkit-transform: rotate($rotate) translate($translateX, $translateY);
   -moz-transform: rotate($rotate) translate($translateX, $translateY);
   -ms-transform: rotate($rotate) translate($translateX, $translateY);
-  -sand-transform: rotate($rotate) translate($translateX, $translateY);
   transform: rotate($rotate) translate($translateX, $translateY);
 }
