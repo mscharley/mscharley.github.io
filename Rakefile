@@ -31,7 +31,8 @@ task :post, :title do |t, args|
 
   # Sanitize our title and generate other data
   safe_title = title.downcase.gsub(/[^a-z0-9]+/, '-').squeeze('-').gsub(/\A-+|-+\z/, '')
-  date = Date.today.strftime '%Y-%m-%d'
+  now = DateTime.now
+  date = now.strftime '%Y-%m-%d'
   file = "_posts/#{date}-#{safe_title}.markdown"
 
   # Actually generate the new branch and file
@@ -44,6 +45,7 @@ task :post, :title do |t, args|
     draft.puts <<TEMPLATE
 ---
 title: #{title}
+date: #{now.strftime '%Y-%m-%d %H-%I-%S %z'}
 layout: post
 ---
 
