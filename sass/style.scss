@@ -8,23 +8,27 @@
 *   http://matt.scharley.me/license.html for more information.                 *
 \******************************************************************************/
 
+$shadowSize: 5px;
+
 @import 'mixins';
 @import 'reset';
 
-@media screen {
-  @import 'screen';
-}
+// Globally import screen so that all clients see it.
+// We can't block it out with media queries anyway.
+@import 'screen';
+
 @media handheld {
   @import 'handheld';
 }
+
+// Catch handhelds that support media queries, but not @media handheld.
+// Also, people who just have small screens.
 @media screen and (max-width: 1024px) {
   @import 'handheld';
 }
 
 // Pull in syntax styling
 @import 'syntax';
-
-$shadowSize: 5px;
 
 body {
   margin: 0;
@@ -36,8 +40,7 @@ body {
 
   > footer {
     margin: 0 auto;
-    padding-right: $shadowSize $shadowSize 0 0;
-    @include page-width;
+    padding: $shadowSize $shadowSize 0 0;
     font-size: x-small;
     text-align: right;
   }
@@ -76,53 +79,8 @@ a {
 }
 
 #container {
-  @include page-width;
   margin: -($shadowSize * 1.5) auto 0 auto;
   position: relative;
-
-  nav.site {
-    position: absolute;
-    top: 1.2em;
-    right: 100%;
-    z-index: 5;
-
-    ul, li {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    ul {
-      display: block;
-      @include transform-origin(100%, 0px);
-      @include transform($rotate: 90deg, $translateX: 100%);
-      white-space: nowrap;
-
-      li {
-        font-size: small;
-        display: inline-block;
-        white-space: normal;
-
-        a {
-          display: block;
-          padding: ($shadowSize + 2px) 20px 5px 10px;
-          border: 1px solid #666;
-          border-top: 0px;
-          background: #444;
-          color: #bbb;
-          text-decoration: none;
-          @include box-shadow(2px, 2px, #999999, 2px);
-
-          &:hover {
-            background: #333;
-            color: #ddd;
-// TODO: Make this effect look right
-//            @include box-shadow(1px, 1px, #999999, 1px);
-          }
-        }
-      }
-    }
-  }
 }
 
 #page {
