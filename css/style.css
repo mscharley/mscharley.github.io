@@ -32,7 +32,8 @@ body > * { min-width: 960px; max-width: 1080px; width: 60%; }
   nav.site ul li a { -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; background: transparent; border: none; color: #333; padding: 7px 15px; }
   nav.site ul li a:hover { background: #333; color: #ccc; }
   body > * { min-width: 0; max-width: none; width: 100%; } }
-.highlight { background: #ffffff; }
+.highlight { background: #eee; border: 1px solid #333; padding: 1em; overflow: auto; max-height: 12em; }
+.highlight > pre { margin: 0; padding: 0; }
 .highlight .c { color: #999988; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
