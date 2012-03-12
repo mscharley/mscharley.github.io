@@ -112,6 +112,28 @@ a {
     }
   }
 
+  > article {
+    > header {
+      border-bottom: 1px solid #ccc;
+
+      h1 {
+        font-size: 2em;
+        margin: 0.3em 0px;
+      }
+
+      h2 {
+        font-size: 1.2em;
+        margin: 0.3em 1em;
+        color: #444;
+      }
+      
+      p {
+        font-size: 0.75em;
+        margin: 0.5em 1.6em;
+      }
+    }
+  }
+
   > footer {
     background: #444444;
     color: #888888;
