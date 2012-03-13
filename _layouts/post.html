@@ -8,12 +8,21 @@ layout: html
       {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
     </hgroup>
     <p class="posted-time">
-      <strong>Updated:</strong> <span class="date">
-      {% if page.updated %}
-        {{ page.updated | date: '%A, %d %B %Y - %H:%M' }}
-      {% else %}
-        {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
-      {% endif %}
+      Updated by
+      <span class="author">
+        {% if page.author %}
+          <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a>
+        {% else %}
+          <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>
+        {% endif %}
+      </span>
+      at
+      <span class="date">
+        {% if page.updated %}
+          {{ page.updated | date: '%A, %d %B %Y - %H:%M' }}
+        {% else %}
+          {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
+        {% endif %}
       </span>
     </p>
     {% if page.tags %}

@@ -10,5 +10,8 @@ exclude:
 
 title: Matthew Scharley
 domain: matt.scharley.me
+author:
+  name: Matthew Scharley
+  email: matt.scharley@gmail.com
 disqus:
   shortname: msme
