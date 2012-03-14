@@ -45,7 +45,7 @@ task :post, :title do |t, args|
     draft.puts <<TEMPLATE
 ---
 title: #{title}
-date: #{now.strftime '%Y-%m-%d %H-%I-%S %z'}
+date: #{now.strftime '%Y-%m-%d %H:%I:%S %z'}
 layout: post
 ---
 
