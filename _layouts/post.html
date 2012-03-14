@@ -8,7 +8,7 @@ layout: html
       {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
     </hgroup>
     <p class="posted-time">
-      Updated by
+      Written by
       <span class="author">
         {% if page.author %}
           <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a>
@@ -18,11 +18,7 @@ layout: html
       </span>
       at
       <span class="date">
-        {% if page.updated %}
-          {{ page.updated | date: '%A, %d %B %Y - %H:%M' }}
-        {% else %}
-          {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
-        {% endif %}
+        {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
       </span>
     </p>
     <nav class="tags">
