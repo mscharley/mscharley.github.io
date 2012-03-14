@@ -21,6 +21,11 @@ layout: html
         {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
       </span>
     </p>
+    {% if page.updated %}
+    <p class="updated-time">
+      Last updated: <span class="date">{{ page.updated | date: '%A, %d %B %Y - %H:%M' }}</span>
+    </p>
+    {% endif %}
     <nav class="tags">
       <strong>Tags:</strong> <ul>
         {% for tag in page.tags %}
