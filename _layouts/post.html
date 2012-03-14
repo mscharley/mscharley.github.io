@@ -25,7 +25,6 @@ layout: html
         {% endif %}
       </span>
     </p>
-    {% if page.tags %}
     <nav class="tags">
       <strong>Tags:</strong> <ul>
         {% for tag in page.tags %}
@@ -33,7 +32,6 @@ layout: html
         {% endfor %}
       </ul>
     </nav>
-    {% endif %}
   </header>
 
   {{ content }}
