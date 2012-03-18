@@ -27,7 +27,7 @@ So, what is `socat`?
 > *-- [socat manpage][man socat]*
 
 In other words, socat sits in the middle of two different sources of IPC
-and passes data between them. I use the term IPC, because `socat` understands
+and passes data between them. I use the term IPC because `socat` understands
 so many different formats that it is a little rediculous. It can process and
 translate between the following formats (not even close to comprehensive):
 
