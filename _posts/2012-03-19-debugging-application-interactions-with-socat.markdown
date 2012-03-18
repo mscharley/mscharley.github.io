@@ -1,5 +1,5 @@
 ---
-title: Debugging application interactions with socat
+title: Debugging UNIX sockets with socat
 date: 2012-03-19 10:02:01 +1100
 layout: post
 tags:
