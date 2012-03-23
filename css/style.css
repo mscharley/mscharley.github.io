@@ -113,7 +113,7 @@ a img { border: 0; }
 #page > article ul li > p:first-child, #page > article ol li > p:first-child, #page > section ul li > p:first-child, #page > section ol li > p:first-child { margin-top: 0px; }
 #page > article ul li > p:last-of-type, #page > article ol li > p:last-of-type, #page > section ul li > p:last-of-type, #page > section ol li > p:last-of-type { margin-bottom: 0px; }
 #page > article ul li > p + ul, #page > article ol li > p + ul, #page > section ul li > p + ul, #page > section ol li > p + ul { margin-top: 0; }
-#page > article > header { border-bottom: 1px solid #ccc; }
+#page > article > header { border-bottom: 1px solid #ccc; padding-right: 65px; }
 #page > article > header h1 { font-size: 2em; margin: 0.3em 0px; }
 #page > article > header h2 { font-size: 1.2em; margin: 0.3em 1em; color: #444; }
 #page > article > header p, #page > article > header nav.tags { font-size: 0.75em; margin: 0.5em 1.6em; }
