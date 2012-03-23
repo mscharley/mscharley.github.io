@@ -1,6 +1,7 @@
 ---
 title: Debugging UNIX sockets with socat
 date: 2012-03-19 10:02:01 +1100
+updated: 2012-03-23 13:41:01 +1100
 layout: post
 tags:
 - socat
@@ -29,7 +30,8 @@ So, what is `socat`?
 In other words, socat sits in the middle of two different sources of IPC
 and passes data between them. I use the term IPC because `socat` understands
 so many different formats that it is a little rediculous. It can process and
-translate between the following formats (not even close to comprehensive):
+translate between the following formats (not even close to 
+[a comprehensive list][socat protocols]):
 
 * TCP with or without SSL
 * UNIX sockets
@@ -72,7 +74,7 @@ wanted to with the second example. You should explore the [man page][man socat]
 to get other cool ideas.
 
 
-
   [man socat]: http://www.dest-unreach.org/socat/doc/socat.html
+  [socat protocols]: http://www.dest-unreach.org/socat/doc/socat.html#ADDRESS_CREAT
 
   *[IPC]: InterProcess Communication
