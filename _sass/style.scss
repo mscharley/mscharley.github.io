@@ -96,6 +96,8 @@ a {
 
     abbr {
       border-bottom: 1px dashed #000;
+      cursor: help;
+      white-space: nowrap;
     }
 
     ul, ol {
