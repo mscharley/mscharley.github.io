@@ -40,7 +40,7 @@ $ LANG=C pactl list | grep -A2 'Sink #' | grep 'Name: ' | cut -d" " -f2
 Using the info from the above commands, I made the following script:
 
 {% highlight sh %}
-#!/bin/shell
+#!/bin/sh
 # ~/bin/pa-headphones
 
 export PULSE_SINK="alsa_output.usb-045e_Microsoft_LifeChat_LX-3000-00-LX3000.iec958-stereo"
