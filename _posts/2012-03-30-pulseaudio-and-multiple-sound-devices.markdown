@@ -1,6 +1,7 @@
 ---
 title: Using PulseAudio and multiple sound devices
 date: 2012-03-30 11:11:02 +1100
+update: 2012-04-11 15:44:02 +1100
 layout: post
 tags:
 - linux
@@ -47,9 +48,9 @@ export PULSE_SINK="alsa_output.usb-045e_Microsoft_LifeChat_LX-3000-00-LX3000.iec
 export PULSE_SOURCE="alsa_output.usb-045e_Microsoft_LifeChat_LX-3000-00-LX3000.iec958-stereo.monitor"
 
 # Export a normalish PATH so `which` doesn't pick up this script
-export PATH=/usr/local/bin;/usr/local/sbin;/usr/bin;/usr/sbin;/bin;/sbin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 
-exec `which $0` $*
+exec $(which $(basename $0)) $*
 {% endhighlight %}
 
 I can then create as many symlinks to this script in my `~/bin` directory as I like
