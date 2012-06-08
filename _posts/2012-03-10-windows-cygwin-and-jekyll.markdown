@@ -1,6 +1,7 @@
 ---
 title: Windows, Cygwin and Jekyll
 layout: post
+updated: 2012-06-08 11:54:00 +1000
 tags:
 - cygwin
 - windows
@@ -93,7 +94,7 @@ There was a bug fix, but seems it never made it into the repos. So, go clone
 `posix-spawn` and install it manually.
 
 {% highlight console %}
-$ gem install rake-compiler
+$ gem install rake-compiler -v 0.7.6
 $ git clone git://github.com/rtomayko/posix-spawn.git
 $ cd posix-spawn
 $ rake gem
