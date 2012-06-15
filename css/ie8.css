@@ -10,4 +10,4 @@
 body nav.site { position: relative; width: 100%; top: auto; right: auto; z-index: 15; background: #ccc; padding-top: 7.5px; }
 body nav.site ul li { border-right: 1px solid #666; }
 body nav.site ul li a { background: transparent; border: none; color: #333; padding: 7px 15px; }
-body nav.site ul li a:hover { background: #333; color: #ccc; }
+body nav.site ul li a:hover { background: #333; color: #ccc; top: 0; left: 0; }
