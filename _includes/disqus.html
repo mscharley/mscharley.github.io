@@ -2,6 +2,7 @@
 <script type="text/javascript">
   var disqus_shortname = '{{ site.disqus.shortname }}';
   var disqus_identifier = '{{ page.url }}';
+  var disqus_url = 'http://{{ site.domain }}{{ page.url }}';
   if (window.location.hostname.match(/local(?:host)?$/)) {
     var disqus_developer = true;
   }
