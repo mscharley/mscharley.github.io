@@ -1,2 +1,6 @@
 User-agent: *
 Allow: /
+
+Disallow: /portfolio/*
+Disallow: /links/*
+Disallow: /core/pages/view/contact
