@@ -1,6 +1,7 @@
 ---
 title: How to find the path to git's workdir
 date: 2012-06-15 18:06:27 +1000
+updated: 2012-06-22 14:30:00 +1000
 layout: post
 tags:
 - git
@@ -13,11 +14,15 @@ confusion about which windows are in which project. Since forever, I've had my p
 laid out in reasonable folders like `~/htdocs/project`, however I was lacking a good way
 to get at that project name.
 
+**Update:** Since I wrote this post, I've found a built-in command to do this. I now have both
+methods aliased, since sometimes you don't want/need an error and you always want a folder name.
+
 The solution
 ------------
 
 {% highlight console %}
-$ git config alias.workdir '!echo $PWD'
+$ git config 'alias.workdir' 'rev-parse --show-toplevel'
+$ git config 'alias.workdir-or-cwd' '!echo $PWD'
 $ git workdir
 $ git workdir | xargs basename     # only get project name
 {% endhighlight %}
