@@ -81,10 +81,8 @@ Next on the list is [RVM][rvm]. There's installation instructions on their homep
 but it boils down to the following:
 
 {% highlight console %}
-$ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
-$ source ~/.bash_profile
-$ rvm install 1.9.3
-$ rvm use --default 1.9.3
+$ curl -L https://get.rvm.io | bash -s stable --ruby
+$ source ~/.rvm/scripts/rvm
 {% endhighlight %}
 
 Here's the hard part. Once you have `ruby` and `gem`, you need to install
@@ -106,7 +104,7 @@ just fall into place. If you want or need pygments support, then installing it i
 simple, you just need to install setuputils manually first.
 
 {% highlight console %}
-$ python < <(curl -s http://peak.telecommunity.com/dist/ez_setup.py)
+$ curl -L http://peak.telecommunity.com/dist/ez_setup.py | python
 $ easy_install Pygments
 {% endhighlight %}
 
