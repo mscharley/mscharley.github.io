@@ -77,7 +77,7 @@ task :publish do
 end
 
 task :deploy => [:clean, :sass, :jekyll] do
-  sh 's3cmd', 'sync', '--reduced-redundancy', '-c', '.s3cfg', *Dir['_site/*'], 's3://matt.scharley.me/'
+  sh 's3cmd', 'sync', '--delete-removed', '--check-md5', '--reduced-redundancy', '-c', '.s3cfg', '_site/', 's3://matt.scharley.me/'
 end
 
 def git(*args)
