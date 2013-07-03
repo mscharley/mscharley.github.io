@@ -1,11 +1,15 @@
 pygments: true
 safe: true
 exclude:
-  LICENSE.md
-  README.md
-  Rakefile
-  CNAME
-  Guardfile
+- LICENSE.md
+- README.md
+- Rakefile
+- CNAME
+- Guardfile
+- .ruby-version
+- .ruby-gemset
+- Gemfile
+- Gemfile.lock
 
 title: Matthew Scharley
 domain: matt.scharley.me

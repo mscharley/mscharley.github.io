@@ -13,7 +13,7 @@ end
 
 desc "Compiles site with Jekyll for testing"
 task :jekyll do
-  sh 'jekyll', '--pygments', '--safe'
+  sh 'jekyll', 'build'
 end
 
 desc "Cleans out the old site"
