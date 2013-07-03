@@ -76,7 +76,7 @@ task :publish do
   git 'branch', '-D', branch
 end
 
-task :deploy do
+task :deploy => [:clean, :sass, :jekyll] do
   sh 's3cmd', 'sync', '--reduced-redundancy', '-c', '.s3cfg', *Dir['_site/*'], 's3://matt.scharley.me/'
 end
 
