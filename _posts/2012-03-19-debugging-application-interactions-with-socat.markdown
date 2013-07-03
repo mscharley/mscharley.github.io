@@ -74,7 +74,7 @@ wanted to with the second example. You should explore the [man page][man socat]
 to get other cool ideas.
 
 
-  [man socat]: http://www.dest-unreach.org/socat/doc/socat.html
-  [socat protocols]: http://www.dest-unreach.org/socat/doc/socat.html#ADDRESS_CREAT
+[man socat]: http://www.dest-unreach.org/socat/doc/socat.html
+[socat protocols]: http://www.dest-unreach.org/socat/doc/socat.html#ADDRESS_CREAT
 
-  *[IPC]: InterProcess Communication
+*[IPC]: InterProcess Communication

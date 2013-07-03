@@ -111,10 +111,10 @@ $ easy_install Pygments
 And we're done at this point. Congratulations! You can now edit your Jekyll blog on
 Windows using the latest version of Jekyll.
 
-  [console2]: http://sourceforge.net/projects/console/
-  [cygwin]: http://www.cygwin.com/
-  [gh-posix-spawn]: https://github.com/rtomayko/posix-spawn/tree/
-  [msword]: http://en.wikipedia.org/wiki/Microsoft_Word
-  [pygments]: http://pygments.org/download/
-  [rvm]: http://beginrescueend.com/
-  [setuptools]: http://peak.telecommunity.com/dist/ez_setup.py
+[console2]: http://sourceforge.net/projects/console/
+[cygwin]: http://www.cygwin.com/
+[gh-posix-spawn]: https://github.com/rtomayko/posix-spawn/tree/
+[msword]: http://en.wikipedia.org/wiki/Microsoft_Word
+[pygments]: http://pygments.org/download/
+[rvm]: http://beginrescueend.com/
+[setuptools]: http://peak.telecommunity.com/dist/ez_setup.py

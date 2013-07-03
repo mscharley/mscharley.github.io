@@ -20,5 +20,4 @@ authentication from any device. Sadly I'm not able to host a copy of this
 any more, but [the code is still freely available][twitterrss-code] and it 
 doesn't take much to host it yourself.
 
-  [twitterrss-code]: https://bitbucket.org/mscharley/twitter-rss
-
+[twitterrss-code]: https://bitbucket.org/mscharley/twitter-rss

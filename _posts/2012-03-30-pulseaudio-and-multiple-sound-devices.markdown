@@ -65,4 +65,4 @@ And now, whenever skype is run it will use my headphones. This will also work fo
 `.desktop` shortcuts, as long as they don't use absolute paths to find their
 executables. Most system-installed ones don't seem to, on Gentoo at least.
 
-  [su-post]: http://superuser.com/q/182149/5313
+[su-post]: http://superuser.com/q/182149/5313

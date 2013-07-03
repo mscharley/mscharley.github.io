@@ -34,6 +34,6 @@ if (Function.prototype.name === undefined && Object.defineProperty !== undefined
 }
 {% endhighlight %}
 
-  [so-name-of-object]: http://stackoverflow.com/a/332429/15537
-  [Function.name]: https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/name
-  [defineProperty]: https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/defineProperty
+[so-name-of-object]: http://stackoverflow.com/a/332429/15537
+[Function.name]: https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/name
+[defineProperty]: https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/defineProperty

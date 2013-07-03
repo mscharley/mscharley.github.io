@@ -32,6 +32,4 @@ workdir so this will always work perfectly. Unfortunately, you can't simply try 
 `core.workdir` because that will only return something if it is explicitly set in 
 `.git/config`. Hopefully this will help someone else out.
 
-
-  [drupal]: http://drupal.org/
-
+[drupal]: http://drupal.org/
