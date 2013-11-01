@@ -8,7 +8,7 @@ task :'jekyll-clean' => [:clean, :jekyll]
 
 desc "Builds all SASS scripts"
 task :sass do
-  sh 'sass', '-C', '-f', '-t', 'compact', '--update', '_sass:css'
+  sh 'compass', 'compile'
 end
 
 desc "Compiles site with Jekyll for testing"
