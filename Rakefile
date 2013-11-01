@@ -18,7 +18,7 @@ end
 
 desc "Cleans out the old site"
 task :clean do
-  sh 'rm', '-rf', '_site'
+  rm_rf '_site'
 end
 
 desc "Create a new post"
