@@ -12,6 +12,7 @@ exclude:
 - Gemfile.lock
 - matt.scharley.me.iml
 - atlassian-ide-plugin.xml
+- config.rb
 
 title: Matthew Scharley
 domain: matt.scharley.me

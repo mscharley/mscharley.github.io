@@ -1,5 +1,7 @@
 require 'date'
 
+S3BUCKET = 'matt.scharley.me'
+
 desc "Builds everything"
 task :default => [:clean, :sass, :jekyll]
 
@@ -77,7 +79,8 @@ task :publish do
 end
 
 task :deploy => [:clean, :sass, :jekyll] do
-  sh 's3cmd', 'sync', '--delete-removed', '--check-md5', '--reduced-redundancy', '-c', '.s3cfg', '_site/', 's3://matt.scharley.me/'
+  sh 's3cmd', 'del', '-r', '--force', '-c', '.s3cfg', "s3://#{S3BUCKET}/"
+  sh 's3cmd', 'put', '-r', '--reduced-redundancy', '-c', '.s3cfg', '_site/', "s3://#{S3BUCKET}/"
 end
 
 def git(*args)
