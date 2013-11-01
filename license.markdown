@@ -49,5 +49,5 @@ released under an MIT license. See below for details:
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 > THE SOFTWARE.
 
-  [github-source]: http://github.com/mscharley/mscharley.github.com
+  [github-source]: http://github.com/mscharley/matt.scharley.me
   [cc-license]: http://creativecommons.org/licenses/by-nc-sa/3.0/au/
