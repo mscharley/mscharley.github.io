@@ -40,7 +40,8 @@
 @mixin svg-background($img) {
   .no-svg & {
     @include sprites-sprite($img);
+    background-size: auto auto;
   }
-  background-size: sprites-sprite-width($img) sprites-sprite-height($img);
   background-image: inline-image($img + ".svg");
+  background-size: sprites-sprite-width($img) sprites-sprite-height($img);
 }
