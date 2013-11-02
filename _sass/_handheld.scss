@@ -35,6 +35,15 @@ nav.site {
   }
 }
 
+#page {
+  $socialOffset: 40px;
+  padding-right: $socialOffset;
+
+  > footer {
+    margin-right: -$socialOffset;
+  }
+}
+
 body {
   > * {
     width: 100%;
