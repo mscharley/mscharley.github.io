@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Licensing Information
+priority: 0.2
 ---
 
 {{ page.title }}

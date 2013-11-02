@@ -5,6 +5,7 @@ layout: post
 tags:
 - js
 - javascript
+priority: 0.7
 ---
 
 Just a few words to get something interesting out there that I saw today.

@@ -7,6 +7,7 @@ tags:
 - drupal-7
 - drupal-states-api
 - logic
+priority: 0.7
 ---
 
 We recently ran into a bug in our code with relation to the States API. We had

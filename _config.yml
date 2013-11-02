@@ -1,5 +1,4 @@
 pygments: true
-safe: true
 exclude:
 - LICENSE.md
 - README.md
@@ -21,3 +20,6 @@ author:
   email: matt.scharley@gmail.com
 disqus:
   shortname: msme
+sitemap:
+  url: http://matt.scharley.me
+  filename: sitemap.xml

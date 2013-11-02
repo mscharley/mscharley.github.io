@@ -6,6 +6,7 @@ tags:
 - js
 - javascript
 - ie
+priority: 0.7
 ---
 
 One of the better [ways of detecting an object's type name in Javascript][so-name-of-object]
