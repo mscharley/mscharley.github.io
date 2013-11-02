@@ -2,7 +2,7 @@
 * This CSS file is copyright Matthew Scharley.                                 *
 *                                                                              *
 * SCSS source available at GitHub:                                             *
-*   http://github.com/mscharley/mscharley.github.com/tree/master/_sass         *
+*   http://github.com/mscharley/matt.scharley.me/tree/master/_sass             *
 *                                                                              *
 * This file is released under the MIT license. See                             *
 *   http://matt.scharley.me/license.html for more information.                 *
@@ -10,6 +10,7 @@
 
 @import 'variables';
 @import 'mixins';
+@import 'sprites';
 @import 'reset';
 
 // Globally import screen so that all clients see it.
@@ -22,7 +23,7 @@
 
 // Catch handhelds that support media queries, but not @media handheld.
 // Also, people who just have small screens.
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1014px) {
   @import 'handheld';
 }
 
@@ -198,11 +199,26 @@ a {
   }
 }
 
-a.fork-me {
-  img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 0;
+section#social {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  width: 32px;
+  padding: 4px 3px 4px 4px;
+  border: 1px solid #333;
+  border-right: none;
+  background: #fffcef;
+  @include border-radius(10px 0px 0px 10px);
+
+  a {
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+
+  @each $site in github, bitbucket, google-plus, linkedin, stackoverflow, twitter {
+    a.#{$site} {
+      @include svg-background(quote($site));
+    }
   }
 }

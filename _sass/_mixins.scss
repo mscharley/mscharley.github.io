@@ -36,3 +36,11 @@
   -ms-transform: rotate($rotate) translate($translateX, $translateY);
   transform: rotate($rotate) translate($translateX, $translateY);
 }
+
+@mixin svg-background($img) {
+  .no-svg & {
+    @include sprites-sprite($img);
+  }
+  background-size: sprites-sprite-width($img) sprites-sprite-height($img);
+  background-image: inline-image($img + ".svg");
+}

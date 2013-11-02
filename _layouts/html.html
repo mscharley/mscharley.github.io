@@ -10,10 +10,10 @@
 
   <link rel="alternate" type="application/atom+xml" title="RSS feed of blog posts" href="http://feeds.feedburner.com/mattscharleyme">
   <link rel="canonical" href="http://{{ site.domain }}{{ page.url }}">
+  <script type="text/javascript" language="JavaScript" src="/js/modernizr.min.js"></script>
 
   <!--[if lt IE 9]>
   <script>var a = ['header','footer','section','aside','nav','article','hgroup'];for(var b in a){document.createElement(a[b]);}</script>
-
   <link type="text/css" rel="stylesheet" href="/css/ie8.css">
   <![endif]-->
 
@@ -37,9 +37,14 @@
       <footer>
         {% include copyright.html %}
 
-        <a href="http://github.com/mscharley" class="fork-me">
-          <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
-        </a>
+        <section id="social">
+          <a href="http://github.com/mscharley" class="github"></a>
+          <a href="https://bitbucket.org/mscharley" class="bitbucket"></a>
+          <a href="https://plus.google.com/106304756704344047916" class="google-plus"></a>
+          <a href="http://www.linkedin.com/profile/view?id=33114124" class="linkedin"></a>
+          <a href="http://stackoverflow.com/users/15537/matthew-scharley" class="stackoverflow"></a>
+          <a href="https://twitter.com/mattscharley" class="twitter"></a>
+        </section>
       </footer>
     </div>
   </div>
