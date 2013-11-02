@@ -33,6 +33,59 @@ This technique does rely on having something like [Modernizr][modernizr] availab
 detection so that we can automatically switch methods in CSS. Unfortunately this is required as some of the properties
 conflict with each other such as `background-size` and `background-position`.
 
+**Example usage:**
+
+{% highlight scss %}
+a {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+@each $site in github, bitbucket, google-plus, linkedin, stackoverflow, twitter {
+  a.#{$site} {
+    @include svg-background(quote($site));
+  }
+}
+{% endhighlight %}
+
+**Produces:**
+
+{% highlight css %}
+.no-svg section#social a.github,
+.no-svg section#social a.bitbucket,
+.no-svg section#social a.google-plus,
+.no-svg section#social a.linkedin,
+.no-svg section#social a.stackoverflow,
+.no-svg section#social a.twitter {
+  background-image: url('/images/sprites-sfa80a12e72.png'); background-repeat: no-repeat;
+}
+
+section#social a {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+section#social a.github {
+  background-image: url('data:image/svg+xml;base64,<base64 string>');
+  background-size: 32px 32px;
+}
+.no-svg section#social a.github {
+  background-position: 0 -32px;
+  background-size: auto auto;
+}
+section#social a.bitbucket {
+  background-image: url('data:image/svg+xml;base64,<base64 string>');
+  background-size: 32px 32px;
+}
+.no-svg section#social a.bitbucket {
+  background-position: 0 0px;
+  background-size: auto auto;
+}
+/* etc... */
+
+{% endhighlight %}
+
 Thoughts? Comments? Leave them below. And now I have pretty social media links on the right hand side of the screen, so
 please feel free to contact me there as well.
 
