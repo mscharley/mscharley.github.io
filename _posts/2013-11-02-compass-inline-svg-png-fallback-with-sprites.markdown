@@ -35,3 +35,5 @@ conflict with each other such as `background-size` and `background-position`.
 
 Thoughts? Comments? Leave them below. And now I have pretty social media links on the right hand side of the screen, so
 please feel free to contact me there as well.
+
+  [modernizr]: http://modernizr.com/
