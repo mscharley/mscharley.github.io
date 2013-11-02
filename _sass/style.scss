@@ -10,6 +10,7 @@
 
 @import 'variables';
 @import 'mixins';
+@import 'fonts';
 @import 'sprites';
 @import 'reset';
 
@@ -36,7 +37,6 @@ body {
   line-height: 1.2;
   background: #dddddd;
   color: #000000;
-  font-family: serif;
 
   > footer {
     margin: 0 auto;
@@ -95,6 +95,21 @@ a {
     margin: 1.2em 5%;
     line-height: 1.3;
 
+    h1 {
+      font-size: 2em;
+      margin: 0.3em 0px;
+      font-family: $lobster;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin: 0.3em 1em;
+      color: #444;
+      font-family: $lobster;
+      font-weight: normal;
+    }
+
     abbr {
       border-bottom: 1px dashed #000;
       cursor: help;
@@ -123,18 +138,6 @@ a {
   > article {
     > header {
       border-bottom: 1px solid #ccc;
-      padding-right: 65px;
-
-      h1 {
-        font-size: 2em;
-        margin: 0.3em 0px;
-      }
-
-      h2 {
-        font-size: 1.2em;
-        margin: 0.3em 1em;
-        color: #444;
-      }
       
       p, nav.tags {
         font-size: 0.75em;
