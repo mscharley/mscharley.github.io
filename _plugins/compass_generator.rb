@@ -62,9 +62,7 @@ module Jekyll
         end
       end
 
-      compiler = ::Compass::Commands::UpdateProject.new(site.config['source'], config).new_compiler_instance
-
-      compiler.run
+      ::Compass::Commands::UpdateProject.new(site.config['source'], config).execute
       nil
     end
   end
