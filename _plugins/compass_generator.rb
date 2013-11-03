@@ -23,18 +23,6 @@ module Jekyll
       puts
 
       output = File.join(site.config['destination'], 'css')
-      if File.exist? output
-        puts "Deleting existing CSS content..."
-
-        site.static_files = site.static_files.select do |p|
-          if p.path.index(output)
-            File.delete p.path
-            false
-          else
-            true
-          end
-        end
-      end
 
       config = {
           :project_path => site.source,
