@@ -1,12 +1,7 @@
 require 'date'
 
-S3BUCKET = 'matt.scharley.me'
-
 desc "Builds everything"
 task :default => [:clean, :jekyll]
-
-desc "Builds Jekyll in a clean environment"
-task :'jekyll-clean' => [:clean, :jekyll]
 
 desc "Compiles site with Jekyll for testing"
 task :jekyll do
@@ -74,8 +69,7 @@ task :publish do
 end
 
 task :deploy => [:clean, :jekyll] do
-  sh 's3cmd', 'del', '-r', '--force', '-c', '.s3cfg', "s3://#{S3BUCKET}/"
-  sh 's3cmd', 'put', '-r', '--reduced-redundancy', '-c', '.s3cfg', '_site/', "s3://#{S3BUCKET}/"
+  sh 's3_website', 'push'
 end
 
 def git(*args)

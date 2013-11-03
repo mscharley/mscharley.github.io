@@ -1,6 +1,3 @@
-# Check for SASS updates and push them locally and into any built site
-
-guard :compass, compile_on_start: true
 
 # Check for any other updates and refresh Jekyll in that case
 guard 'rake', :task => 'jekyll' do
