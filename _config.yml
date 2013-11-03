@@ -9,6 +9,7 @@ exclude:
 - Gemfile.lock
 - matt.scharley.me.iml
 - atlassian-ide-plugin.xml
+- s3_website.yml
 
 title: Matthew Scharley
 domain: matt.scharley.me
