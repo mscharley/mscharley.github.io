@@ -11,6 +11,9 @@ exclude:
 - atlassian-ide-plugin.xml
 - s3_website.yml
 
+gems:
+- jekyll-compass
+
 title: Matthew Scharley
 domain: matt.scharley.me
 author:
