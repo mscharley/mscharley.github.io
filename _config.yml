@@ -4,7 +4,6 @@ exclude:
 - README.md
 - Rakefile
 - CNAME
-- Guardfile
 - Gemfile
 - Gemfile.lock
 - matt.scharley.me.iml
