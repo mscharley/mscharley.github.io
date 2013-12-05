@@ -1,6 +1,6 @@
 ---
 title: Logical equivalences and the Drupal States API
-date: 2012-05-14 14:34:33 +1000
+date: 2012-05-14 14:34:33
 layout: post
 tags:
 - drupal

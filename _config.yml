@@ -23,3 +23,6 @@ disqus:
 sitemap:
   url: http://matt.scharley.me
   filename: sitemap.xml
+
+timezone: "Australia/Melbourne"
+encoding: "UTF-8"

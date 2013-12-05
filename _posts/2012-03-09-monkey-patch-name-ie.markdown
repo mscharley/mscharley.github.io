@@ -1,7 +1,7 @@
 ---
 title: "[JS] HOWTO: Monkey patch IE for support for Function.name"
 layout: post
-updated: 2012-06-08 22:49:00 +1000
+updated: 2012-06-08 22:49:00
 tags:
 - js
 - javascript

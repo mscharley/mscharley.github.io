@@ -1,7 +1,7 @@
 ---
 title: Windows, Cygwin and Jekyll
 layout: post
-updated: 2012-06-08 11:54:00 +1000
+updated: 2012-06-08 11:54:00
 tags:
 - cygwin
 - windows
