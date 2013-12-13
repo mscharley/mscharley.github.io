@@ -1,0 +1,3 @@
+output_style: compact
+sass_options:
+  unix_newlines: true
