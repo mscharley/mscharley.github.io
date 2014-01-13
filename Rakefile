@@ -11,6 +11,7 @@ end
 desc "Cleans out the old site"
 task :clean do
   rm_rf '_site'
+  rm_rf '.sass-cache'
 end
 
 desc "Create a new post"
@@ -68,6 +69,7 @@ task :publish do
   git 'branch', '-D', branch
 end
 
+desc "Deploy website to S3"
 task :deploy => [:clean, :jekyll] do
   sh 's3_website', 'push'
 end
