@@ -39,6 +39,9 @@ cloudfront_distribution_config:
 redirects:
   index.php: /
   2012/03/18/debugging-application-interactions-with-socat.html: 2012/03/19/debugging-application-interactions-with-socat.html
+  posts/2010/09/howto-access-rss-feed-your-friends-tweets-twitter.html: 2012/08/14/howto-access-rss-feed-your-friends-tweets-twitter.html
+  links/links/goto/24/index.html: https://github.com/mscharley/so-1535392/zipball/master
+  portfolio/project/view/swizzle/index.html: http://github.com/mscharley/so-1535392
 
 # routing_rules:
 #   - condition:
