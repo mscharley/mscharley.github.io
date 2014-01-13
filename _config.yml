@@ -13,6 +13,16 @@ exclude:
 gems:
 - jekyll-compass
 
+markdown: redcarpet
+
+redcarpet:
+  extensions:
+  - footnotes
+  - highlight
+  - underline
+  - space_after_headers
+  - strikethrough
+
 title: Matthew Scharley
 domain: matt.scharley.me
 author:
