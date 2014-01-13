@@ -16,7 +16,7 @@ folder inside your source folder and output the results directly into your `_sit
 automatically whenever your site is built by Jekyll, so it will always be up to date. For example, a run of this site
 might look like this:
 
-{% highlight console %}
+``` console
 $ jekyll build
 Configuration file: D:/Websites/matt.scharley.me/_config.yml
             Source: D:/Websites/matt.scharley.me
@@ -30,7 +30,7 @@ identical _site/css/print.css
 identical _site/css/style.css
 
       Generating... done.
-{% endhighlight %}
+```
 
 I originally created this plugin back just before Jekyll 1.3 was released but it's gone through a few spurts of growth
 and I now feel it's up to public usage. So please, if you are using either Compass or plain Sass then please give this

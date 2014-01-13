@@ -34,14 +34,14 @@ but as far as I've found, it only lets you control these through setting environ
 variables; `PULSE_SINK` and `PULSE_SOURCE`. You can get values for these variables
 from the following command lines:
 
-{% highlight console %}
+``` console
 $ LANG=C pactl list | grep -A2 'Source #' | grep 'Name: ' | cut -d" " -f2
 $ LANG=C pactl list | grep -A2 'Sink #' | grep 'Name: ' | cut -d" " -f2
-{% endhighlight %}
+```
 
 Using the info from the above commands, I made the following script:
 
-{% highlight sh %}
+``` sh
 #!/bin/sh
 # ~/bin/pa-headphones
 
@@ -52,15 +52,15 @@ export PULSE_SOURCE="alsa_output.usb-045e_Microsoft_LifeChat_LX-3000-00-LX3000.i
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 
 exec $(which $(basename $0)) $*
-{% endhighlight %}
+```
 
 I can then create as many symlinks to this script in my `~/bin` directory as I like
 and they will all use my headset for sound input and output. So, for instance:
 
-{% highlight console %}
+``` console
 $ cd ~/bin
 $ ln -s pa-headphones skype
-{% endhighlight %}
+```
 
 And now, whenever skype is run it will use my headphones. This will also work for
 `.desktop` shortcuts, as long as they don't use absolute paths to find their

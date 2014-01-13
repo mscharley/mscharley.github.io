@@ -18,7 +18,7 @@ So, here's how to monkey patch it into IE9 and above. IE8 doesn't support
 [`defineProperty`][defineProperty] properly and earlier versions don't support 
 it at all so those versions are still unsupported by this method.
 
-{% highlight javascript %}
+``` javascript
 /**
  * Hack in support for Function.name for browsers that don't support it.
  * IE, I'm looking at you.
@@ -33,7 +33,7 @@ if (Function.prototype.name === undefined && Object.defineProperty !== undefined
         set: function(value) {}
     });
 }
-{% endhighlight %}
+```
 
 [so-name-of-object]: http://stackoverflow.com/a/332429/15537
 [Function.name]: https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/name

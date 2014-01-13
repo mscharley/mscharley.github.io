@@ -21,12 +21,12 @@ methods aliased, since sometimes you don't want/need an error and you always wan
 The solution
 ------------
 
-{% highlight console %}
+``` console
 $ git config 'alias.workdir' 'rev-parse --show-toplevel'
 $ git config 'alias.workdir-or-cwd' '!echo $PWD'
 $ git workdir
 $ git workdir | xargs basename     # only get project name
-{% endhighlight %}
+```
 
 Yep, it's that stupidly straightforward. Aliases are always run from the root of your
 workdir so this will always work perfectly. Unfortunately, you can't simply try to read

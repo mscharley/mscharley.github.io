@@ -49,18 +49,18 @@ UNIX sockets are great for all sorts of reasons, including ensuring that they
 are only available locally. However, this also means that they are hard to
 listen in on and debug. So, enter `socat`:
 
-{% highlight console %}
+``` console
 $ socat -v UNIX-LISTEN:/tmp/socat-listen UNIX-CONNECT:/path/to/real.socket
-{% endhighlight %}
+```
 
 Now, point the client application at `/tmp/socat-listen` instead of the real
 socket and enjoy the conversation.
 
 Or, if you wish to provide your own test data rather than simply listening in:
 
-{% highlight console %}
+``` console
 $ socat -v READLINE UNIX-CONNECT:/path/to/real.socket
-{% endhighlight %}
+```
 
 With this, `socat` will use readline to get data from the console, and print
 back any replies.
@@ -77,5 +77,3 @@ to get other cool ideas.
 
 [man socat]: http://www.dest-unreach.org/socat/doc/socat.html
 [socat protocols]: http://www.dest-unreach.org/socat/doc/socat.html#ADDRESS_CREAT
-
-*[IPC]: InterProcess Communication

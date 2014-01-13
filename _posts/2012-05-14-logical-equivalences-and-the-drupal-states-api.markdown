@@ -13,7 +13,7 @@ priority: 0.7
 We recently ran into a bug in our code with relation to the States API. We had
 the following code:
 
-{% highlight php %}
+``` php
 $form['field_activity_pymt_dets']['#states'] = array(
   'visible' => array(
     '.form-item-field-activity-cost-und input[type=checkbox]:not(:first)' => array('checked' => true)
@@ -22,7 +22,7 @@ $form['field_activity_pymt_dets']['#states'] = array(
     '.form-item-field-activity-cost-und input[type=checkbox]:not(:first)' => array('checked' => true)
   )
 );
-{% endhighlight %}
+```
 
 The problem with this code is rather simple. It's asking the States API to look at
 many checkboxes and show/require the current field if any single one of these is
@@ -41,7 +41,7 @@ So, how to convert this so that it works? We have two related issues here:
 Well, the solution is to invert the logic so that there is an `AND` relationship in
 effect. Hence, the following resultant code:
 
-{% highlight php %}
+``` php
 $options_lang = $form['field_activity_cost']['#language'];
 $options = array_keys($form['field_activity_cost'][$options_lang]['#options']);
 array_shift($options); // Drop the first option on the floor because we don't care about it (free).
@@ -51,7 +51,7 @@ foreach ($options as $id) {
   $form['field_activity_pymt_dets']['#states']['invisible'][$selector] = array('unchecked' => true);
   $form['field_activity_pymt_dets']['#states']['optional'][$selector] = array('unchecked' => true);
 }
-{% endhighlight %}
+```
 
 This does the same thing, but works slightly more counterintuitively. `Make visible if any
 one of these is checked` is the same as `Make invisible if all of these are unchecked`.

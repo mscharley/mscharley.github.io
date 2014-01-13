@@ -46,25 +46,25 @@ own, then the rest of this article should be redundant.
 *   [Cygwin][cygwin], optionally [Console2][console2]
 
     *   Devel
-
         * gcc4
         * gcc4-g++
         * git
         * make
-    *   Libs
 
+    *   Libs
         * libiconv
         * libiconv2
         * zlib
+
     *   Net
-
         * curl
+
     *   Python
-
         * python (only if you need/want Pygments)
-*   [RVM][rvm]
 
+*   [RVM][rvm]
     * ruby-1.9.\*
+
 * posix-spawn gem - [from source][gh-posix-spawn]
 * jekyll gem - from rubygems
 * Python [setuptools][setuptools]
@@ -81,10 +81,10 @@ Oops.
 Next on the list is [RVM][rvm]. There's installation instructions on their homepage,
 but it boils down to the following:
 
-{% highlight console %}
+``` console
 $ curl -L https://get.rvm.io | bash -s stable --ruby
 $ source ~/.rvm/scripts/rvm
-{% endhighlight %}
+```
 
 Here's the hard part. Once you have `ruby` and `gem`, you need to install
 `posix-spawn`. There is a bug in the version of `posix-spawn` in the the gem
@@ -92,22 +92,22 @@ repositories however that makes installing via `gem` impossible on Cygwin.
 There was a bug fix, but seems it never made it into the repos. So, go clone
 `posix-spawn` and install it manually.
 
-{% highlight console %}
+``` console
 $ gem install rake-compiler -v 0.7.6
 $ git clone git://github.com/rtomayko/posix-spawn.git
 $ cd posix-spawn
 $ rake gem
 $ gem install pkg/posix-spawn-0.3.6
-{% endhighlight %}
+```
 
 Once `posix-spawn` is installed, you can happily `gem install jekyll`, and it should
 just fall into place. If you want or need pygments support, then installing it is
 simple, you just need to install setuputils manually first.
 
-{% highlight console %}
+``` console
 $ curl -L http://peak.telecommunity.com/dist/ez_setup.py | python
 $ easy_install Pygments
-{% endhighlight %}
+```
 
 And we're done at this point. Congratulations! You can now edit your Jekyll blog on
 Windows using the latest version of Jekyll.

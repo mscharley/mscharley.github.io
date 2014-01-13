@@ -11,7 +11,7 @@ priority: 0.7
 
 Hey everyone, just thought I'd share a quick mixin I created for this website while doing the new social media buttons.
 
-{% highlight scss %}
+``` scss
 @import 'sprites/*.png';
 @mixin svg-background($img) {
   .no-svg & {
@@ -21,7 +21,7 @@ Hey everyone, just thought I'd share a quick mixin I created for this website wh
   background-image: inline-image($img + ".svg");
   background-size: sprites-sprite-width($img) sprites-sprite-height($img);
 }
-{% endhighlight %}
+```
 
 So what does this little baby do? Well, it sets up a background image that is either an inline SVG image, or a segment
 of a PNG sprite depending on the capabilities of your browser. All images live separately for easy editing and all
@@ -35,7 +35,7 @@ conflict with each other such as `background-size` and `background-position`.
 
 **Example usage:**
 
-{% highlight scss %}
+``` scss
 a {
   width: 32px;
   height: 32px;
@@ -47,11 +47,11 @@ a {
     @include svg-background(quote($site));
   }
 }
-{% endhighlight %}
+```
 
 **Produces:**
 
-{% highlight css %}
+``` css
 .no-svg section#social a.github,
 .no-svg section#social a.bitbucket,
 .no-svg section#social a.google-plus,
@@ -83,8 +83,7 @@ section#social a.bitbucket {
   background-size: auto auto;
 }
 /* etc... */
-
-{% endhighlight %}
+```
 
 Thoughts? Comments? Leave them below. And now I have pretty social media links on the right hand side of the screen, so
 please feel free to contact me there as well.
