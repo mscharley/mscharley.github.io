@@ -9,11 +9,12 @@ tags:
 priority: 0.7
 ---
 
-That's right, I wrote a plugin for Jekyll. Jekyll is the static site generator I use for this very website, and I was
-sick of orchestrating Compass around Jekyll. Now, Compass sings to my own tune. Specifically, this is a generator plugin
-for Jekyll which will take your directory of Sass or Compass files in a `_sass` folder inside your source folder and
-output the results directly into your `_site` output folder. It will run automatically whenever your site is built by
-Jekyll, so it will always be up to date. For example, a run of this site might look like this:
+That's right, [I wrote a plugin for Jekyll][jekyll-compass]. Jekyll is the static site generator I use for this very
+website, and I was sick of orchestrating Compass around Jekyll. [Now, Compass sings to my own tune][readme].
+Specifically, this is a generator plugin for Jekyll which will take your directory of Sass or Compass files in a `_sass`
+folder inside your source folder and output the results directly into your `_site` output folder. It will run
+automatically whenever your site is built by Jekyll, so it will always be up to date. For example, a run of this site
+might look like this:
 
 {% highlight console %}
 $ jekyll build
@@ -39,5 +40,6 @@ to start using it. It's worth it, I promise.
 
 [Issues to the issue queue please][gh-issues], but feel free to discuss this plugin below.
 
-
+  [jekyll-compass]: https://github.com/mscharley/jekyll-compass
+  [readme]: https://github.com/mscharley/jekyll-compass/blob/master/README.md
   [gh-issues]: https://github.com/mscharley/jekyll-compass/issues
