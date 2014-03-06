@@ -5,3 +5,5 @@ import_paths:
 output_style: compact
 sass_options:
   unix_newlines: true
+force: true
+cache: false

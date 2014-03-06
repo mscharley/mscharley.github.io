@@ -1,6 +1,9 @@
-// Foundation by ZURB
-// foundation.zurb.com
-// Licensed under MIT Open Source
+//
+// WEBSITE SETTINGS
+//
+
+@import 'fonts';
+@import 'solarized';
 
 //
 // FOUNDATION SETTINGS
@@ -40,9 +43,9 @@
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-bg: $base3;
+$body-font-color: $base01;
+$body-font-family: $lato;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -55,12 +58,12 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$primary-color: $blue;
+$secondary-color: $base2;
+$alert-color: $red;
+$success-color: $green;
+$warning-color: $yellow;
+$info-color: $cyan;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -157,14 +160,14 @@
 // $paragraph-text-rendering: optimizeLegibility;
 
 // We use these to style <code> tags
-// $code-color: scale-color($alert-color, $lightness: -27%);
-// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
-// $code-font-weight: bold;
+$code-color: $base00;
+$code-font-family: Consolas, $droid-mono;
+$code-font-weight: bold;
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-font-color: $primary-color;
+$anchor-font-color-hover: scale-color($primary-color, $lightness: -20%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;

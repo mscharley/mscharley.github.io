@@ -1,56 +1,49 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html class="no-js" lang="en-GB">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>{{ page.title }} | {{ site.title }}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="/css/style.css">
+  <link type="text/css" rel="stylesheet" href="/css/app.css">
   <link type="text/css" rel="stylesheet" media="print" href="/css/print.css">
-  <link type="text/css" rel="stylesheet" media="handheld, (orientation: portrait), (max-width: 1014px)" href="/css/handheld.css">
 
   <link rel="alternate" type="application/atom+xml" title="RSS feed of blog posts" href="http://feeds.feedburner.com/mattscharleyme">
   <link rel="canonical" href="http://{{ site.domain }}{{ page.url }}">
-  <script type="text/javascript" language="JavaScript" src="/js/modernizr.min.js"></script>
-
-  <!--[if lt IE 9]>
-  <script>var a = ['header','footer','section','aside','nav','article','hgroup'];for(var b in a){document.createElement(a[b]);}</script>
-  <link type="text/css" rel="stylesheet" href="/css/ie8.css">
-  <![endif]-->
+  <script src="/assets/modernizr/modernizr.js"></script>
+  <script src="/assets/jquery/dist/jquery.min.js" defer></script>
+  <script src="/assets/foundation/js/foundation.min.js" defer></script>
+  <script src="/js/app.js" defer></script>
 
   {% include ga.html %}
 </head>
 <body>
-<!--[if lt IE 9]>
-<noscript>
-  <div id="banner"><div class="inner">
-    <strong>Warning!</strong>
-    Because your browser does not support HTML5, some elements are simulated using JavaScript.
-    Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
-  </div></div>
-</noscript>
-<![endif]-->
-  <div id="container">
-    {% include navigation.html %}
-    <div id="page">
+  <div id="page" class="row">
+    <div class="medium-2 columns medium-push-10">
+      {% include navigation.html %}
+    </div>
+    <div class="medium-10 columns medium-pull-2">
       {{ content }}
-
-      <footer>
-        {% include copyright.html %}
-
-        <section id="social">
-          <a href="http://github.com/mscharley" class="github"></a>
-          <a href="https://bitbucket.org/mscharley" class="bitbucket"></a>
-          <a href="https://plus.google.com/106304756704344047916" class="google-plus"></a>
-          <a href="http://www.linkedin.com/profile/view?id=33114124" class="linkedin"></a>
-          <a href="http://stackoverflow.com/users/15537/matthew-scharley" class="stackoverflow"></a>
-          <a href="https://twitter.com/mattscharley" class="twitter"></a>
-        </section>
-      </footer>
     </div>
   </div>
-  <footer>
-    Site last generated: {{ site.time | date_to_xmlschema }} <a href="https://github.com/mscharley/matt.scharley.me">[src]</a>
+  <div class="row">
+    <div class="small-12 columns">
+      {% include copyright.html %}
+
+      <section id="social">
+        <a href="http://github.com/mscharley" class="github"></a>
+        <a href="https://bitbucket.org/mscharley" class="bitbucket"></a>
+        <a href="https://plus.google.com/106304756704344047916" class="google-plus"></a>
+        <a href="http://www.linkedin.com/profile/view?id=33114124" class="linkedin"></a>
+        <a href="http://stackoverflow.com/users/15537/matthew-scharley" class="stackoverflow"></a>
+        <a href="https://twitter.com/mattscharley" class="twitter"></a>
+      </section>
+    </div>
+  </div>
+  <footer class="row">
+    <div class="small-12 columns">
+      Site last generated: {{ site.time | date_to_xmlschema }} <a href="https://github.com/mscharley/matt.scharley.me">[src]</a>
+    </div>
   </footer>
 </body>
 </html>
