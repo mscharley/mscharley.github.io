@@ -9,6 +9,7 @@ exclude:
 - matt.scharley.me.iml
 - atlassian-ide-plugin.xml
 - s3_website.yml
+- bower.json
 
 gems:
 - jekyll-compass

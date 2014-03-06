@@ -1,3 +1,7 @@
+require:
+- jekyll-compass
+import_paths:
+- assets/foundation/scss
 output_style: compact
 sass_options:
   unix_newlines: true
