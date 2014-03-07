@@ -2,8 +2,12 @@ require:
 - jekyll-compass
 import_paths:
 - assets/foundation/scss
-output_style: compact
-sass_options:
-  unix_newlines: true
+output_style: compressed
 force: true
 cache: false
+line_comments: false
+font_dir: fonts
+javascripts_dir: js
+
+sass_options:
+  unix_newlines: true
