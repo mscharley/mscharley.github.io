@@ -11,12 +11,11 @@ max_age:
   "images/*": <%= 24 * 60 * 60 %>
   "*": <%= 5 * 60 %>
 
-#gzip:
-#  - .css
-#  - .js
-#  - .svg
-#  - .html
-#   - .md
+gzip:
+  - .css
+  - .js
+  - .svg
+  - .html
 
 # ignore_on_server: that_folder_of_stuff_i_dont_keep_locally
 

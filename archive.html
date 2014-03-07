@@ -1,0 +1,16 @@
+---
+layout: no-section
+title: Matthew Scharley
+change_frequency: weekly
+---
+<section id="posts">
+  <h2>Blog posts</h2>
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li>
+      <span class="date">{{ post.date | date_to_string }}</span> -
+      <a href="{{ post.url }}"{% if post.subtitle %} title="{{ post.subtitle | escape }}"{% endif %}>{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
