@@ -2,11 +2,14 @@
   <ul class="{{ include.class }}">
     <li><label>Site nav</label></li>
     <li><a href="/index.html">Home</a></li>
+    <li><label>Projects</label></li>
+    <li><a href="https://github.com/mscharley/jekyll-compass#readme">jekyll-compass</a></li>
+    <li><a href="https://github.com/mscharley/jekyll-compass#readme">jekyll-compass</a></li>
     <li><label>Find me</label></li>
   </ul>
 
   <section class="social">
-    <ul class="{{ include.class }}">
+    <ul class="{{ include.class }} icons">
       <li><a href="http://github.com/mscharley" class="github">
         <i class="fi-social-github show-for-medium-up"></i>
         <span class="show-for-small-only">Github</span>
@@ -33,6 +36,20 @@
         <span class="show-for-small-only">Twitter</span>
       </a></li>
     </ul>
-    <a href="#" class="hide-for-small-only">And more...</a>
+    <ul class="{{ include.class }} hide-for-small-only">
+      <li><a href="#" data-reveal-id="more-social-links">And more...</a></li>
+    </ul>
+    {% if include.class == 'side-nav' %}
+    <div id="more-social-links" class="reveal-modal" data-reveal>
+      <ul class="{{ include.class }}">
+        {% include navigation/extra_social.html %}
+      </ul>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+    {% else %}
+    <ul class="{{ include.class }}">
+      {% include navigation/extra_social.html %}
+    </ul>
+    {% endif %}
   </section>
 </nav>

@@ -486,7 +486,7 @@ $block-grid-media-queries: false;
 // $form-label-font-size: rem-calc(14);
 // $form-label-font-weight: normal;
 // $form-label-line-height: 1.5;
-// $form-label-font-color: scale-color(#000, $lightness: 30%);
+$form-label-font-color: $base00;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
@@ -873,7 +873,7 @@ $block-grid-media-queries: false;
 // $reveal-overlay-bg-old: #000;
 
 // We use these to control the style of the modal itself.
-// $reveal-modal-bg: #fff;
+$reveal-modal-bg: $base3;
 // $reveal-position-top: 50px;
 // $reveal-default-width: 80%;
 // $reveal-modal-padding: rem-calc(20);
@@ -883,8 +883,8 @@ $block-grid-media-queries: false;
 // $reveal-close-font-size: rem-calc(22);
 // $reveal-close-top: rem-calc(8);
 // $reveal-close-side: rem-calc(11);
-// $reveal-close-color: #aaa;
-// $reveal-close-weight: bold;
+$reveal-close-color: $base02;
+$reveal-close-weight: bold;
 
 // We use these to control the modal border
 // $reveal-border-style: solid;
@@ -907,9 +907,9 @@ $block-grid-media-queries: false;
 // $side-nav-list-margin: rem-calc(0 0 7 0);
 
 // We use these to control link styles.
-// $side-nav-link-color: $primary-color;
-// $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
-// $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
+$side-nav-link-color: $anchor-font-color;
+$side-nav-link-color-active: $anchor-font-color-hover;
+$side-nav-link-color-hover: $anchor-font-color-hover;
 // $side-nav-font-size: rem-calc(14);
 // $side-nav-font-weight: normal;
 // $side-nav-font-family: $body-font-family;

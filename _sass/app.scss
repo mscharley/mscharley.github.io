@@ -52,8 +52,8 @@ code {
   nav.site {
     text-align: right;
 
-    ul {
-      padding-bottom: 0;
+    .side-nav {
+      padding: 0;
     }
 
     li {
@@ -61,29 +61,46 @@ code {
         text-transform: uppercase;
         font-size: 110%;
         color: $base1;
+        margin-top: rem-calc(32);
       }
     }
 
     .social {
-      padding-bottom: 2 * $paragraph-margin-bottom;
+      padding-bottom: rem-calc(32);
 
-      ul {
+      ul.icons {
         @include block-grid(
           $per-row: 3,
           $spacing: rem-calc(5px),
           $base-style: true
         );
-      }
 
-      li {
-        text-align: center;
-        font-size: 30px;
+        li {
+          text-align: center;
+          font-size: 30px;
 
-        a {
-          color: $base1;
+          a {
+            color: $base1;
+          }
         }
       }
     }
+  }
+}
+
+#more-social-links ul {
+  @include block-grid(
+    $per-row: 5,
+    $spacing: rem-calc(10),
+    $base-style: true
+  );
+
+  a {
+    display: block;
+    text-align: center;
+    @extend .button;
+    @extend .button.small;
+    @extend .button.radius;
   }
 }
 
