@@ -1,3 +1,9 @@
+/*
+ * Solarized color scheme by Ethan Schoonover
+ *
+ * @see http://ethanschoonover.com/solarized
+ */
+
 $base03:    #002b36;
 $base02:    #073642;
 $base01:    #586e75;
@@ -14,3 +20,8 @@ $violet:    #6c71c4;
 $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
+
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto;
+}

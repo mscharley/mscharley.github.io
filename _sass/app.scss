@@ -4,16 +4,16 @@
 @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
 //   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
+  "foundation/components/button-groups",
+  "foundation/components/buttons",
 //   "foundation/components/clearing",
 //   "foundation/components/dropdown",
 //   "foundation/components/dropdown-buttons",
 //   "foundation/components/flex-video",
 //   "foundation/components/forms",
   "foundation/components/grid",
+  "foundation/components/block-grid",
   "foundation/components/inline-lists",
 //   "foundation/components/joyride",
 //   "foundation/components/keystrokes",
@@ -41,7 +41,100 @@
 
 @import 'syntax';
 
-nav.site {
-  text-align: right;
+code {
+  background-color: $base2;
+}
 
+label {
+  font-weight: bold;
+}
+
+#site-nav {
+  background: $base02;
+  color: $base1;
+
+  nav.site {
+    text-align: right;
+
+    ul {
+      padding-bottom: 0;
+    }
+
+    li.heading {
+      text-transform: uppercase;
+      font-size: 110%;
+    }
+
+    #social {
+      padding-bottom: 2 * $paragraph-margin-bottom;
+
+      ul {
+        @include block-grid(
+          $per-row: 3,
+          $spacing: rem-calc(5px),
+          $base-style: true
+        );
+      }
+
+      li {
+        text-align: center;
+        font-size: 30px;
+
+        a {
+          color: $base1;
+        }
+      }
+    }
+  }
+}
+
+nav.tags {
+  margin-bottom: $paragraph-margin-bottom;
+
+  > * {
+    vertical-align: middle;
+  }
+
+  label {
+    margin-right: 0.5em;
+  }
+
+  ul {
+    display: inline-block;
+
+    a.button {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#footer {
+  background: $base03;
+  color: $base1;
+  padding: $paragraph-margin-bottom 0;
+  margin-top: 3 * $paragraph-margin-bottom;
+
+  .copyright {
+    @include clearfix;
+    margin-bottom: $paragraph-margin-bottom;
+
+    .license-logo {
+      float: left;
+    }
+
+    .license-text {
+      margin-left: 108px;
+    }
+  }
+
+  footer {
+    text-align: right;
+    font-size: $small-font-size;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
 }

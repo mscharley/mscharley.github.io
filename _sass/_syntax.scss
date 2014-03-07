@@ -1,19 +1,14 @@
 .highlight {
-  background: $base2;
   padding: 0.3em;
   margin-bottom: $paragraph-margin-bottom;
   overflow: auto;
   line-height: $paragraph-line-height;
   max-height: 10 * $paragraph-line-height * 1em;
+  background: $base2;
 
   pre {
     margin: 0;
     padding: 0;
-  }
-
-  code {
-    font-weight: normal;
-    color: $base01;
   }
 
   // Comment

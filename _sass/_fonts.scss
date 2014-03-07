@@ -5,6 +5,4 @@
 $lato: 'Lato', sans-serif;
 $droid-mono: 'Ubuntu Mono', monospace;
 
-pre, xmp, plaintext, listing, tt, code, kbd, samp {
-  font-family: $droid-mono;
-}
+@import 'foundation-icons';

@@ -14,6 +14,7 @@ We recently ran into a bug in our code with relation to the States API. We had
 the following code:
 
 ``` php
+<?php
 $form['field_activity_pymt_dets']['#states'] = array(
   'visible' => array(
     '.form-item-field-activity-cost-und input[type=checkbox]:not(:first)' => array('checked' => true)
@@ -42,6 +43,7 @@ Well, the solution is to invert the logic so that there is an `AND` relationship
 effect. Hence, the following resultant code:
 
 ``` php
+<?php
 $options_lang = $form['field_activity_cost']['#language'];
 $options = array_keys($form['field_activity_cost'][$options_lang]['#options']);
 array_shift($options); // Drop the first option on the floor because we don't care about it (free).

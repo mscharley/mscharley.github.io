@@ -6,9 +6,8 @@ layout: html
     <hgroup>
       <h1>{{ page.title }}</h1>
       {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
-    </hgroup>
-    <p class="posted-time">
-      Written by
+      <h3 class="posted-time"><small>
+        Written by
       <span class="author">
         {% if page.author %}
           <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a>
@@ -16,20 +15,21 @@ layout: html
           <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>
         {% endif %}
       </span>
-      at
+        at
       <span class="date">
         {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
       </span>
-    </p>
-    {% if page.updated %}
-    <p class="updated-time">
-      Last updated: <span class="date">{{ page.updated | date: '%A, %d %B %Y - %H:%M' }}</span>
-    </p>
-    {% endif %}
+      </small></h3>
+      {% if page.updated %}
+      <h4 class="updated-time"><small>
+        Last updated: <span class="date">{{ page.updated | date: '%A, %d %B %Y - %H:%M' }}</span>
+      </small></h4>
+      {% endif %}
+    </hgroup>
     <nav class="tags">
-      <strong>Tags:</strong> <ul class="inline-list">
+      <label>Tags:</label> <ul class="button-group round">
         {% for tag in page.tags %}
-          <li>{{ tag }}</li>
+          <li><a href="#" class="button tiny secondary">{{ tag }}</a></li>
         {% endfor %}
       </ul>
     </nav>

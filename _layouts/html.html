@@ -6,7 +6,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link type="text/css" rel="stylesheet" href="/css/app.css">
-  <link type="text/css" rel="stylesheet" media="print" href="/css/print.css">
 
   <link rel="alternate" type="application/atom+xml" title="RSS feed of blog posts" href="http://feeds.feedburner.com/mattscharleyme">
   <link rel="canonical" href="http://{{ site.domain }}{{ page.url }}">
@@ -19,31 +18,24 @@
 </head>
 <body>
   <div id="page" class="row">
-    <div class="medium-2 columns medium-push-10">
+    <div id="site-nav" class="medium-2 columns medium-push-10">
       {% include navigation.html %}
     </div>
     <div class="medium-10 columns medium-pull-2">
       {{ content }}
     </div>
   </div>
-  <div class="row">
-    <div class="small-12 columns">
-      {% include copyright.html %}
-
-      <section id="social">
-        <a href="http://github.com/mscharley" class="github"></a>
-        <a href="https://bitbucket.org/mscharley" class="bitbucket"></a>
-        <a href="https://plus.google.com/106304756704344047916" class="google-plus"></a>
-        <a href="http://www.linkedin.com/profile/view?id=33114124" class="linkedin"></a>
-        <a href="http://stackoverflow.com/users/15537/matthew-scharley" class="stackoverflow"></a>
-        <a href="https://twitter.com/mattscharley" class="twitter"></a>
-      </section>
+  <div id="footer">
+    <div class="row">
+      <div class="small-12 columns">
+        {% include copyright.html %}
+      </div>
     </div>
+    <footer class="row">
+      <div class="small-12 columns">
+        Site last generated: {{ site.time | date_to_xmlschema }} <a href="https://github.com/mscharley/matt.scharley.me">[src]</a>
+      </div>
+    </footer>
   </div>
-  <footer class="row">
-    <div class="small-12 columns">
-      Site last generated: {{ site.time | date_to_xmlschema }} <a href="https://github.com/mscharley/matt.scharley.me">[src]</a>
-    </div>
-  </footer>
 </body>
 </html>
