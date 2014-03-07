@@ -11,7 +11,7 @@
 //   "foundation/components/dropdown",
 //   "foundation/components/dropdown-buttons",
 //   "foundation/components/flex-video",
-//   "foundation/components/forms",
+  "foundation/components/forms",
   "foundation/components/grid",
   "foundation/components/block-grid",
   "foundation/components/inline-lists",
@@ -34,19 +34,15 @@
 //   "foundation/components/thumbs",
 //   "foundation/components/tooltips",
 //   "foundation/components/top-bar",
-  "foundation/components/type"
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility"
+  "foundation/components/type",
+  "foundation/components/offcanvas",
+  "foundation/components/visibility"
 ;
 
 @import 'syntax';
 
 code {
   background-color: $base2;
-}
-
-label {
-  font-weight: bold;
 }
 
 #site-nav {
@@ -60,12 +56,15 @@ label {
       padding-bottom: 0;
     }
 
-    li.heading {
-      text-transform: uppercase;
-      font-size: 110%;
+    li {
+      label {
+        text-transform: uppercase;
+        font-size: 110%;
+        color: $base1;
+      }
     }
 
-    #social {
+    .social {
       padding-bottom: 2 * $paragraph-margin-bottom;
 
       ul {
@@ -88,31 +87,35 @@ label {
   }
 }
 
-nav.tags {
-  margin-bottom: $paragraph-margin-bottom;
+#page-wrapper {
+  background: $base3;
+  color: $base00;
+  padding-bottom: 3 * $paragraph-margin-bottom;
 
-  > * {
-    vertical-align: middle;
-  }
+  nav.tags {
+    margin-bottom: $paragraph-margin-bottom;
 
-  label {
-    margin-right: 0.5em;
-  }
+    > * {
+      vertical-align: middle;
+    }
 
-  ul {
-    display: inline-block;
+    label {
+      display: inline;
+      margin-right: 0.5em;
+    }
 
-    a.button {
-      margin-bottom: 0;
+    ul {
+      display: inline-block;
+
+      a.button {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 #footer {
-  background: $base03;
-  color: $base1;
   padding: $paragraph-margin-bottom 0;
-  margin-top: 3 * $paragraph-margin-bottom;
 
   .copyright {
     @include clearfix;

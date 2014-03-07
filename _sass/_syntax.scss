@@ -3,8 +3,10 @@
   margin-bottom: $paragraph-margin-bottom;
   overflow: auto;
   line-height: $paragraph-line-height;
-  max-height: 10 * $paragraph-line-height * 1em;
   background: $base2;
+  @media #{$medium-up} {
+    max-height: 10 * $paragraph-line-height * 1em;
+  }
 
   pre {
     margin: 0;

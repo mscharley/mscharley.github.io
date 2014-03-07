@@ -17,25 +17,42 @@
   {% include ga.html %}
 </head>
 <body>
-  <div id="page" class="row">
-    <div id="site-nav" class="medium-2 columns medium-push-10">
-      {% include navigation.html %}
-    </div>
-    <div class="medium-10 columns medium-pull-2">
-      {{ content }}
-    </div>
-  </div>
-  <div id="footer">
-    <div class="row">
-      <div class="small-12 columns">
-        {% include copyright.html %}
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar show-for-small-only">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+    </nav>
+    <aside class="left-off-canvas-menu">
+      {% include navigation.html class="off-canvas-list" %}
+    </aside>
+    <section class="main-section">
+      <div id="page-wrapper">
+        <div id="page" class="row">
+          <div id="site-nav" class="medium-2 columns medium-push-10 hide-for-small-only">
+            {% include navigation.html class="side-nav" %}
+          </div>
+          <div class="medium-10 columns medium-pull-2">
+            {{ content }}
+          </div>
+        </div>
       </div>
-    </div>
-    <footer class="row">
-      <div class="small-12 columns">
-        Site last generated: {{ site.time | date_to_xmlschema }} <a href="https://github.com/mscharley/matt.scharley.me">[src]</a>
+      <div id="footer">
+        <div class="row">
+          <div class="small-12 columns">
+            {% include copyright.html %}
+          </div>
+        </div>
+        <footer class="row">
+          <div class="small-12 columns">
+            Site last generated: {{ site.time | date_to_xmlschema }} <a href="https://github.com/mscharley/matt.scharley.me">[src]</a>
+          </div>
+        </footer>
       </div>
-    </footer>
+    </section>
+    <a class="exit-off-canvas"></a>
   </div>
+</div>
 </body>
 </html>
