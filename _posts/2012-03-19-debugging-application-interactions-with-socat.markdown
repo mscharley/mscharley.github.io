@@ -26,7 +26,7 @@ So, what is `socat`?
 > (see address types), and because lots of address options may be applied to
 > the streams, socat can be used for many different purposes.
 >
-> *-- [socat manpage][man socat]*
+> <cite>[socat manpage][man socat]</cite>
 
 In other words, socat sits in the middle of two different sources of IPC
 and passes data between them. I use the term IPC because `socat` understands
