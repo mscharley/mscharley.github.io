@@ -2,11 +2,10 @@ require:
 - jekyll-compass
 import_paths:
 - assets/foundation/scss
+http_path: "/"
 output_style: compressed
-force: true
-cache: false
 line_comments: false
-font_dir: fonts
+fonts_dir: fonts
 javascripts_dir: js
 
 sass_options:

@@ -22,21 +22,23 @@
 <body>
 <div class="off-canvas-wrap">
   <div class="inner-wrap">
-    <nav class="tab-bar show-for-small-only">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-      </section>
-    </nav>
+    <div class="fixed">
+      <nav class="tab-bar show-for-small-only">
+        <section class="left-small">
+          <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+        </section>
+      </nav>
+    </div>
     <aside class="left-off-canvas-menu">
       {% include navigation.html class="off-canvas-list" %}
     </aside>
     <section class="main-section">
       <div id="page-wrapper">
         <div id="page" class="row">
-          <div id="site-nav" class="medium-2 columns medium-push-10 hide-for-small-only">
+          <div id="site-nav" class="medium-3 columns medium-push-9 hide-for-small-only">
             {% include navigation.html class="side-nav" %}
           </div>
-          <div class="medium-10 columns medium-pull-2">
+          <div class="medium-9 columns medium-pull-3">
             {{ content }}
           </div>
         </div>

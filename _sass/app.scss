@@ -41,6 +41,13 @@
 
 @import 'syntax';
 
+@media #{$small-only} {
+  // Account for the fixed top-bar
+  section.main-section {
+    padding-top: $tabbar-height;
+  }
+}
+
 code {
   background-color: $base2;
 }
@@ -126,6 +133,51 @@ code {
 
       a.button {
         margin-bottom: 0;
+      }
+    }
+  }
+
+  nav.recent {
+    margin-bottom: $paragraph-margin-bottom;
+
+    .previous, .next {
+      @include clearfix;
+    }
+
+    a {
+      max-width: 95%;
+      display: block;
+    }
+
+    .previous {
+      &::before {
+        content: "‹";
+      }
+
+      &::before, a{
+        float: left;
+        margin-right: -100%
+      }
+
+      a {
+        margin-left: 5%;
+      }
+    }
+
+    .next {
+      text-align: right;
+
+      &::before {
+        content: "›"
+      }
+
+      &::before, a{
+        float: right;
+        margin-left: -100%
+      }
+
+      a {
+        margin-right: 5%;
       }
     }
   }

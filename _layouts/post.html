@@ -38,6 +38,22 @@ layout: html
   {{ content }}
 
   <footer>
+    <nav class="recent row">
+      {% if page.previous %}
+      <div class="small-6 columns previous">
+        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+      </div>
+      {% else %}
+      <div class="small-6"></div>
+      {% endif %}
+      {% if page.next %}
+      <div class="small-6 columns next">
+        <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+      </div>
+      {% else %}
+      <div class="small-6"></div>
+      {% endif %}
+    </nav>
     {% include disqus.html %}
   </footer>
 </article>
