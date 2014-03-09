@@ -24,13 +24,7 @@ layout: html
       Last updated: <span class="date">{{ page.updated | date: '%A, %d %B %Y - %H:%M' }}</span>
     </small></h4>
     {% endif %}
-    <nav class="tags">
-      <label>Tags:</label> <ul class="button-group radius">
-        {% for tag in page.tags %}
-          <li><a href="#" class="button tiny secondary">{{ tag }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
+    {% include navigation/tag_list.html tags=page.tags %}
   </header>
 
   {{ content }}

@@ -3,6 +3,7 @@
     <li><label>Site nav</label></li>
     <li><a href="/index.html">Home</a></li>
     <li><a href="/archive.html">Archive</a></li>
+    <li><a href="/tags.html">Tags</a></li>
     <li><label>Projects</label></li>
     <li><a href="https://github.com/mscharley/jekyll-compass#readme">jekyll-compass</a></li>
     <li><a href="https://github.com/mscharley/matt.scharley.me">This website</a></li>
@@ -30,7 +31,7 @@
         <i class="fi-social-stack-overflow show-for-medium-up"></i>
         <span class="show-for-small-only">Stack Overflow</span>
       </a></li>
-      <li><a href="mailto:matt.scharley@gmail.com">
+      <li><a href="mailto:{{ site.author.email }}">
         <i class="fi-mail show-for-medium-up"></i>
         <span class="show-for-small-only">Email</span>
       </a></li>
@@ -39,10 +40,10 @@
         <span class="show-for-small-only">Twitter</span>
       </a></li>
     </ul>
-    <ul class="{{ include.class }} hide-for-small-only">
+    {% if include.class == 'side-nav' %}
+    <ul class="{{ include.class }}">
       <li><a href="#" data-reveal-id="more-social-links">And more...</a></li>
     </ul>
-    {% if include.class == 'side-nav' %}
     <div id="more-social-links" class="reveal-modal" data-reveal>
       <ul class="{{ include.class }}">
         {% include navigation/extra_social.html %}

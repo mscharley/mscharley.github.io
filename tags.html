@@ -1,0 +1,12 @@
+---
+layout: default
+title: Tags
+---
+
+<div class="tag-listing">
+<ul>
+{% for tag in site.tags %}
+<li><a href="/tagged/{{ tag[0] }}.html" class="small button">{{ tag[0] }}</a></li>
+{% endfor %}
+</ul>
+</div>

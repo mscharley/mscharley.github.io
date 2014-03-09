@@ -1,0 +1,10 @@
+---
+layout: default
+title: Page not found
+---
+
+Oops, we can't find that page. If you typed the url manually, check your spelling. Otherwise, please use the menu on
+the right to find what you were looking for, or perhaps [Google][google search] can help you find what you are looking
+for.
+
+  [google search]: http://www.google.com/?q=site:matt.scharley.me

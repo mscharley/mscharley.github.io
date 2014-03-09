@@ -6,6 +6,19 @@
 @import 'solarized';
 
 //
+// COMPASS CSS3 SETTINGS
+// @see http://compass-style.org/reference/compass/support/
+//
+
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: false;
+$legacy-support-for-mozilla: false;
+$support-for-original-webkit-gradients: false;
+$experimental-support-for-opera: false;
+$experimental-support-for-svg: true;
+$experimental-support-for-pie: false;
+
+//
 // FOUNDATION SETTINGS
 //
 
@@ -167,7 +180,7 @@ $code-font-weight: normal;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 $anchor-font-color: $primary-color;
-$anchor-font-color-hover: scale-color($primary-color, $lightness: -20%);
+$anchor-font-color-hover: $red;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;

@@ -1,8 +1,23 @@
 ---
-title: Welcome
 layout: default
 change_frequency: weekly
 ---
 
-Hi there. Things will be expanding as I get time, but I've put this up as a quick v1.0 so that I can start writing
-again as quickly as possible. I really do miss it, so look out for some stuff coming soon.
+# About me
+
+Hi, my name is Matthew Scharley. I'm a Drupal consultant and general web programmer based out of Melbourne, Australia.
+This is my website which I use as a blog and a place to host various projects I'm working on. If you are interested in
+hearing what I have to say then have a look at the [archive of posts][archive] or what I have to say on
+[various specific subjects][tags]. You can also find some of my popular, active projects listed in the menu. For others
+check the Github and Bitbucket links.
+
+I am available for work, there are contact links in the menu. [Direct email][mail] is preferred for this though.
+
+The [code to this website][website-github] is [released under MIT][license]. Feel free to poke around and borrow what
+you like the HTML/CSS.
+
+  [archive]: /archive.html
+  [tags]: /tags.html
+  [website-github]: https://github.com/mscharley/matt.scharley.me
+  [license]: /license.html
+  [mail]: mailto:{{ site.author.email }}
