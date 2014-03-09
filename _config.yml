@@ -1,5 +1,5 @@
-source: src
-destination: build
+source: ./src
+destination: ./build
 
 gems:
 - jekyll-compass

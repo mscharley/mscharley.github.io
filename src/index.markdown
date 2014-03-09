@@ -11,7 +11,7 @@ hearing what I have to say then have a look at the [archive of posts][archive] o
 [various specific subjects][tags]. You can also find some of my popular, active projects listed in the menu. For others
 check the Github and Bitbucket links.
 
-I am available for work, there are contact links in the menu. [Direct email][mail] is preferred for this though.
+I am available for work, there are various contact links in the menu. [Direct email][mail] is preferred for this though.
 
 The [code to this website][website-github] is [released under MIT][license]. Feel free to poke around and borrow what
 you like the HTML/CSS.
