@@ -1,15 +1,5 @@
-pygments: true
-exclude:
-- LICENSE.md
-- README.md
-- Rakefile
-- CNAME
-- Gemfile
-- Gemfile.lock
-- matt.scharley.me.iml
-- atlassian-ide-plugin.xml
-- s3_website.yml
-- bower.json
+source: src
+destination: build
 
 gems:
 - jekyll-compass

@@ -1,3 +1,3 @@
-/_site
-/_drafts
-/assets/*
+/build
+/src/_drafts
+/src/assets/*

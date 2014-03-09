@@ -9,7 +9,7 @@ end
 
 desc "Cleans out the old site"
 task :clean do
-  rm_rf '_site'
+  rm_rf 'build'
   rm_rf '.sass-cache'
 end
 
@@ -21,5 +21,5 @@ end
 
 desc "Deploy website to S3"
 task :deploy => [:clean, :jekyll] do
-  sh 's3_website', 'push'
+  sh 's3_website', 'push', '--site=build'
 end
