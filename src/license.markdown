@@ -20,17 +20,17 @@ Content Licence
 The following directories and their contents are copyright Matthew Scharley
 and released under a [CC-BY-NC-SA][cc-license] license:
 
-* \_posts
-* images
+* src/\_posts
+* src/images
 
 Source Code Licence
 -------------------
 
 All other directories and files as well as any source code snippets that may 
-appear as part of posts in the \_posts directory mentioned above are 
+appear as part of posts in the directories mentioned above are
 released under an MIT license. See below for details:
 
-> Copyright (C) 2012 by Matthew Scharley
+> Copyright (C) 2012-2014 by Matthew Scharley
 > 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
