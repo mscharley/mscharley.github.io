@@ -3,29 +3,27 @@ layout: html
 ---
 <article id="main" class="post">
   <header>
-    <hgroup>
-      <h1>{{ page.title }}</h1>
-      {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
-      <h3 class="posted-time"><small>
-        Written by
-      <span class="author">
-        {% if page.author %}
-          <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a>
-        {% else %}
-          <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>
-        {% endif %}
-      </span>
-        at
-      <span class="date">
-        {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
-      </span>
-      </small></h3>
-      {% if page.updated %}
-      <h4 class="updated-time"><small>
-        Last updated: <span class="date">{{ page.updated | date: '%A, %d %B %Y - %H:%M' }}</span>
-      </small></h4>
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
+    <h3 class="posted-time"><small>
+      Written by
+    <span class="author">
+      {% if page.author %}
+        <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a>
+      {% else %}
+        <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>
       {% endif %}
-    </hgroup>
+    </span>
+      at
+    <span class="date">
+      {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
+    </span>
+    </small></h3>
+    {% if page.updated %}
+    <h4 class="updated-time"><small>
+      Last updated: <span class="date">{{ page.updated | date: '%A, %d %B %Y - %H:%M' }}</span>
+    </small></h4>
+    {% endif %}
     <nav class="tags">
       <label>Tags:</label> <ul class="button-group radius">
         {% for tag in page.tags %}

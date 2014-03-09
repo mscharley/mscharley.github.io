@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Welcome
+layout: default
 change_frequency: weekly
 ---
 

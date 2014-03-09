@@ -119,7 +119,9 @@ code {
   background: $base3;
   color: $base00;
   padding-bottom: 3 * $paragraph-margin-bottom;
+}
 
+article#main {
   nav.tags {
     margin-bottom: $paragraph-margin-bottom;
 

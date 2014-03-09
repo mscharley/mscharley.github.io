@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Blog posts
 change_frequency: weekly
 ---

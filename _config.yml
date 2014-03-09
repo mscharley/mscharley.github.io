@@ -21,6 +21,7 @@ redcarpet:
   - footnotes
   - highlight
   - underline
+  - smart
   - space_after_headers
   - strikethrough
 

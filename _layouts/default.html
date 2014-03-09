@@ -2,5 +2,11 @@
 layout: html
 ---
 <section id="main">
+  {% if page.title %}
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  {% endif %}
+
   {{ content }}
 </section>
