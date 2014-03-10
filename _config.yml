@@ -4,6 +4,12 @@ destination: ./build
 gems:
 - jekyll-compass
 
+exclude:
+- assets/fastclick
+- assets/jquery/src
+- assets/modernizr/media
+- assets/modernizr/test
+
 markdown: redcarpet
 
 redcarpet:
