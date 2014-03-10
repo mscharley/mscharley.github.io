@@ -6,7 +6,7 @@ layout: post
 tags:
 - socat
 - networking
-- unix sockets
+- unix-sockets
 priority: 0.7
 ---
 
