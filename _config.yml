@@ -1,5 +1,6 @@
 source: ./src
 destination: ./build
+plugins: ./plugins
 
 gems:
 - jekyll-compass
