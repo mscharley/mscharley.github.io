@@ -1,7 +1,7 @@
 ---
 title: Windows, Cygwin and Jekyll
 layout: post
-updated: 2012-06-08 11:54:00
+updated: 2014-03-10 23:56:00
 tags:
 - cygwin
 - windows
@@ -44,31 +44,24 @@ First, a list of things you will need, in order. If you can follow this list on 
 own, then the rest of this article should be redundant.
 
 *   [Cygwin][cygwin], optionally [Console2][console2]
-
     *   Devel
         * gcc4
         * gcc4-g++
         * git
         * make
-
     *   Libs
         * libiconv
         * libiconv2
         * zlib
-
     *   Net
         * curl
-
     *   Python
         * python (only if you need/want Pygments)
-
 *   [RVM][rvm]
-    * ruby-1.9.\*
-
-* posix-spawn gem - [from source][gh-posix-spawn]
-* jekyll gem - from rubygems
-* Python [setuptools][setuptools]
-* [Pygments][pygments]
+    * ruby-2.\*
+*   jekyll gem - from rubygems
+*   Python [setuptools][setuptools]
+*   [Pygments][pygments]
 
 First, install Cygwin with the above packages by using the `setup.exe` executable
 available on their homepage. It's important to get both `iconv` *and* `iconv2`. If
@@ -86,23 +79,10 @@ $ curl -L https://get.rvm.io | bash -s stable --ruby
 $ source ~/.rvm/scripts/rvm
 ```
 
-Here's the hard part. Once you have `ruby` and `gem`, you need to install
-`posix-spawn`. There is a bug in the version of `posix-spawn` in the the gem
-repositories however that makes installing via `gem` impossible on Cygwin.
-There was a bug fix, but seems it never made it into the repos. So, go clone
-`posix-spawn` and install it manually.
-
-``` console
-$ gem install rake-compiler -v 0.7.6
-$ git clone git://github.com/rtomayko/posix-spawn.git
-$ cd posix-spawn
-$ rake gem
-$ gem install pkg/posix-spawn-0.3.6
-```
-
-Once `posix-spawn` is installed, you can happily `gem install jekyll`, and it should
-just fall into place. If you want or need pygments support, then installing it is
-simple, you just need to install setuputils manually first.
+From here you can happily `gem install jekyll`, and it should just fall into place. There used to be issues with the
+`posix-spawn` gem which necessitated it being installed from source, but that fix finally made it's way into a rubygems
+release. At this point you should have a working Jekyll installation. If you want or need pygments support, then
+installing it is simple, you just need to install setuputils manually first.
 
 ``` console
 $ curl -L http://peak.telecommunity.com/dist/ez_setup.py | python

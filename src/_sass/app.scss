@@ -53,6 +53,18 @@ html, body, .off-canvas-wrap, .off-canvas-wrap > .inner-wrap {
   min-height: 100%;
 }
 
+code {
+  background-color: $base2;
+}
+
+ul, ol {
+  li {
+    ul, ol {
+      margin-bottom: 0.5 * $paragraph-margin-bottom;
+    }
+  }
+}
+
 .skip-nav {
   position: absolute;
   display: block;
@@ -68,10 +80,6 @@ html, body, .off-canvas-wrap, .off-canvas-wrap > .inner-wrap {
     background: $base03;
     clip: auto;
   }
-}
-
-code {
-  background-color: $base2;
 }
 
 #site-nav {
