@@ -119,25 +119,48 @@ ul, ol {
           a {
             color: $base1;
           }
+
+          i {
+            display: inline-block;
+          }
+
+          span {
+            display: none;
+          }
         }
       }
     }
   }
 }
 
-#more-social-links ul {
-  @include block-grid(
-    $per-row: 5,
-    $spacing: rem-calc(10),
-    $base-style: true
-  );
+.social, #more-social-links {
+  i {
+    display: none;
+  }
+}
 
-  a {
-    display: block;
-    text-align: center;
-    @extend .button;
-    @extend .button.small;
-    @extend .button.radius;
+#more-social-links {
+  ul {
+    @include block-grid(
+      $per-row: 4,
+      $spacing: rem-calc(15),
+      $base-style: true
+    );
+
+    a {
+      display: block;
+      text-align: center;
+      @extend .button;
+      @extend .button.small;
+      @extend .button.radius;
+      margin-bottom: 0;
+    }
+  }
+
+  .close-reveal-modal {
+    top: rem-calc(5);
+    right: rem-calc(5);
+    line-height: 0.6;
   }
 }
 
