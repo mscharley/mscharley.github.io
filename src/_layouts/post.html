@@ -5,24 +5,24 @@ layout: html
   <header>
     <h1>{{ page.title }}</h1>
     {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
-    <h3 class="posted-time"><small>
+    <p class="posted-time">
       Written by
-    <span class="author">
-      {% if page.author %}
-        <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a>
-      {% else %}
-        <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>
-      {% endif %}
-    </span>
+      <span class="author">
+        {% if page.author %}
+          <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a>
+        {% else %}
+          <a href="mailto:{{ site.author.email }}">{{ site.author.name }}</a>
+        {% endif %}
+      </span>
       at
-    <span class="date">
-      {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
-    </span>
-    </small></h3>
+      <span class="date">
+        {{ page.date | date: '%A, %d %B %Y - %H:%M' }}
+      </span>
+    </p>
     {% if page.updated %}
-    <h4 class="updated-time"><small>
+    <p class="updated-time">
       Last updated: <span class="date">{{ page.updated | date: '%A, %d %B %Y - %H:%M' }}</span>
-    </small></h4>
+    </p>
     {% endif %}
     {% include navigation/tag_list.html tags=page.tags %}
   </header>

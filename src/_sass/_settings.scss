@@ -58,7 +58,7 @@ $experimental-support-for-pie: false;
 // We use these to control various global styles
 $body-bg: $base03;
 $body-font-color: $base1;
-$body-font-family: $lato;
+$body-font-family: $caslon;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -133,7 +133,7 @@ $info-color: $cyan;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: $futura;
 // $header-font-weight: normal;
 // $header-font-style: normal;
 $header-font-color: $base02;
@@ -174,7 +174,7 @@ $small-font-color: $base01;
 
 // We use these to style <code> tags
 $code-color: $base01;
-$code-font-family: Consolas, $droid-mono;
+$code-font-family: Consolas, monospace;
 $code-font-weight: normal;
 
 // We use these to style anchors

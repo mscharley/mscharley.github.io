@@ -65,6 +65,17 @@ ul, ol {
   }
 }
 
+header {
+  p:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+}
+
+.button {
+  font-family: $header-font-family;
+  text-transform: uppercase;
+}
+
 .skip-nav {
   position: absolute;
   display: block;
@@ -95,6 +106,7 @@ ul, ol {
 
     li {
       label {
+        font-family: $header-font-family;
         text-transform: uppercase;
         font-size: 110%;
         color: $base1;
