@@ -8,16 +8,16 @@ def exec_bundle_exec(*args)
 end
 
 desc "Builds everything"
-task :default => [:clean, :jekyll]
+task :default => [:clean, :build]
 
-desc "Compiles site with Jekyll for testing"
-task :jekyll do
-  bundle_exec 'jekyll', 'build'
+desc "Compiles site with Usmu for testing"
+task :build do
+  bundle_exec 'usmu', 'generate'
 end
 
 desc "Cleans out the old site"
 task :clean do
-  rm_rf 'build'
+  rm_rf 'site'
   rm_rf '.sass-cache'
 end
 
@@ -29,5 +29,5 @@ end
 
 desc "Deploy website to S3"
 task :deploy => [:clean, :jekyll] do
-  bundle_exec 's3_website', 'push', '--site=build'
+  bundle_exec 's3_website', 'push', '--site=site'
 end

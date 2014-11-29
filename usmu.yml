@@ -1,0 +1,21 @@
+---
+
+source: src
+
+exclude:
+- assets/fastclick/
+- assets/jquery/src/
+- assets/modernizr/media/
+- assets/modernizr/test/
+- _*.s[ca]ss
+
+title: Matthew Scharley
+domain: matt.scharley.me
+author:
+  name: Matthew Scharley
+  email: matt.scharley@gmail.com
+disqus:
+  shortname: msme
+sitemap:
+  url: http://matt.scharley.me
+  filename: sitemap.xml

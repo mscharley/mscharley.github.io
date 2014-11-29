@@ -4,4 +4,4 @@ To build this locally you will need to:
 
     bundle install
     rake install
-    jekyll build
+    usmu generate

@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+    title Hello world
+
+    link rel="alternative" type="application/atom+xml" title="RSS feed of blog posts" href="http://feeds.feedburner.com/mattscharleyme"
+    link rel="canonical" href="http://#{site.domain}#{page.url}"
+    / TODO: Add all headers in a way that makes sense
+      <link type="text/css" rel="stylesheet" href="/css/app.css">
+      <script src="/assets/modernizr/modernizr.js"></script>
+      <script type="text/javascript" src="//use.typekit.net/xyq2apt.js"></script>
+      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+      <script src="/assets/jquery/dist/jquery.min.js" defer></script>
+      <script src="/assets/foundation/js/foundation.min.js" defer></script>
+      <script src="/assets/foundation/js/foundation/foundation.reveal.js" defer></script>
+      <script src="/js/app.js" defer></script>
+
+    == include ga.slim
+
+  body
+    a href="#main-section" class="skip-nav" Skip to navigation
+    .off-canvas-wrap
+      .inner-wrap
+        .fixed
+          nav.tab-bar.show-for-small-only
+            section.left-small
+              a.left-off-canvas-toggle.menu-icon
+                span
+
+        aside.left-off-canvas-menu
+          == include navigation.slim
+
+        section.main-section
+          #page-wrapper
+            #page.row
+              #site-nav.medium-3.columns.medium-push-9.hide-for-small-only
+                == include navigation.slim
+              .medium-9.columns.medium-pull-3
+                | #{{content}}
+
+          #footer
+            .row
+              .small-12.columns
+                == include copyright.slim
+            footer.row
+              .small-12.columns
+                / TODO: Add generation time
+                | Site last generated: now
+                a href="https://bitbucket.org/matthew-scharley/matt.scharley.me" [src]
+
+        a.exit-off-canvas
