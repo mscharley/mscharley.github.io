@@ -1,0 +1,14 @@
+p
+  a href="/tags.html" Back to tag listing
+
+ul
+  - for tag in site.tags
+    - if tag[0] == page.tag
+      - for post in tag[1]
+        li.archive_list
+          time datetime="#{post.date | date: "%Y-%m-%d"}"
+            | #{{post.date | date: "%d/%m/%Y"}}
+          a.archive_list_article_link href="#{post.url}" #{post.title}
+          - if post.summary
+            | #{{post.summary}}
+          == include navigation/tag_list.html
