@@ -9,6 +9,9 @@ exclude:
 - assets/modernizr/test/
 - _*.s[ca]ss
 
+default meta:
+  layout: default
+
 title: Matthew Scharley
 domain: matt.scharley.me
 author:
@@ -19,3 +22,12 @@ disqus:
 sitemap:
   url: http://matt.scharley.me
   filename: sitemap.xml
+
+redcarpet:
+  extensions:
+  - footnotes
+  - highlight
+  - underline
+  - smart
+  - space_after_headers
+  - strikethrough
