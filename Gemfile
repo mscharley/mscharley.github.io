@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'usmu', '~> 0.2'
+gem 'usmu', :path => '../usmu'
 
 gem 'sass'
 gem 'compass'

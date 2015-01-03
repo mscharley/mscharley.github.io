@@ -4,10 +4,14 @@ html
     meta http-equiv="Content-Type" content="text/html; charset=utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-    title Hello world
+    title
+      /- if page.title
+        | #{page.title} |
+      /- else
+      | #{site['title']}
 
     link rel="alternative" type="application/atom+xml" title="RSS feed of blog posts" href="http://feeds.feedburner.com/mattscharleyme"
-    link rel="canonical" href="http://#{site.domain}#{page.url}"
+    / link rel="canonical" href="http://#{site['domain']}#{page.url}"
     / TODO: Add all headers in a way that makes sense
       <link type="text/css" rel="stylesheet" href="/css/app.css">
       <script src="/assets/modernizr/modernizr.js"></script>
@@ -19,7 +23,7 @@ html
       <script src="/assets/foundation/js/foundation/foundation.reveal.js" defer></script>
       <script src="/js/app.js" defer></script>
 
-    == include ga.slim
+    == include 'ga'
 
   body
     a href="#main-section" class="skip-nav" Skip to navigation
@@ -32,20 +36,20 @@ html
                 span
 
         aside.left-off-canvas-menu
-          == include navigation.slim
+          == include 'navigation'
 
         section.main-section
           #page-wrapper
             #page.row
               #site-nav.medium-3.columns.medium-push-9.hide-for-small-only
-                == include navigation.slim
+                == include 'navigation'
               .medium-9.columns.medium-pull-3
                 | #{{content}}
 
           #footer
             .row
               .small-12.columns
-                == include copyright.slim
+                == include 'copyright'
             footer.row
               .small-12.columns
                 / TODO: Add generation time

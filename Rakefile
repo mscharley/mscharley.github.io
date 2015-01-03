@@ -12,7 +12,7 @@ task :default => [:clean, :build]
 
 desc "Compiles site with Usmu for testing"
 task :build do
-  bundle_exec 'usmu', 'generate'
+  bundle_exec 'usmu', 'generate', '--trace'
 end
 
 desc "Cleans out the old site"
