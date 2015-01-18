@@ -40,3 +40,8 @@ redcarpet:
 sass:
   :load_paths:
   - src/assets/foundation/scss
+
+plugin:
+  s3:
+    region: us-east-1
+    bucket: matt.scharley.me
