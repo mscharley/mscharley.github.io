@@ -4,12 +4,14 @@ source: src
 
 exclude:
 - assets/fastclick/
-- assets/jquery/src/
 - assets/modernizr/media/
-- assets/modernizr/test/
 - assets/foundation/scss/
+- 'assets/**/{test,tests,src}/'
+- '**/{,.}bower.json'
+- '**/.git*'
+# Don't parse Sass partials directly
 - '**/_*.s[ca]ss'
-# SASS processing is buggy
+# No Compass abilities
 - css/app.scss
 
 default meta:
@@ -34,3 +36,7 @@ redcarpet:
   - smart
   - space_after_headers
   - strikethrough
+
+sass:
+  :load_paths:
+  - src/assets/foundation/scss

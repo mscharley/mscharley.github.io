@@ -1,35 +1,35 @@
 article#main.post
   header
-    h1 #{{page.title}}
-    - if page.subtitle
-      h2 #{{page.subtitle}}
+    h1 #{{page['title']}}
+    - if page['subtitle']
+      h2 #{{page['subtitle']}}
     p.posted.time
       | Written by
       span.author
-        - if page.author
-          a href="mailto:#{ page.author.email }" page.author.name
+        - if page['author']
+          a href="mailto:#{ page['author']['email'] }" #{ page['author']['name'] }
         - else
-          a href="mailto:#{ site.author.email }" site.author.name
+          a href="mailto:#{ site['author']['email'] }" #{ site['author']['name'] }
       | at
       span.date
         | #{{ page.date | date: '%A, %d %B %Y - %H:%M' }}
-    - if page.updated
+    - if page['updated']
       p.updated-time
         | Last updated:
         span.date
-          | #{{page.updated | date: '%A, %d %B %Y - %H:%M'}}
-    == include navigation/tag_list, tags: page.tags
+          | #{{page['updated'] | date: '%A, %d %B %Y - %H:%M'}}
+    == include navigation/tag_list, tags: page['tags']
 
   | #{{content}}
 
   footer
     nav.recent.row
-      - if page.previous
+      - if page['previous']
         .small-6.columns.previous
           a href="#{page.previous.url}" page.previous.title
       - else
         .small-6
-      - if page.next
+      - if page['next']
         .small-6.columns.clearing-main-next
           a href="#{page.next.url}" page.next.title
       - else

@@ -1,0 +1,40 @@
+nav.site
+  ul class=wrapper_class
+    li
+      label Site nav
+    li
+      a href="/" Home
+    li
+      a href="/archive.html" Archive
+    li
+      a href="/tags.html" Tags
+
+    li
+      label Projects
+    li
+      a href="https://github.com/mscharley/jekyll-compass#readme" jekyll-compass
+    li
+      a href="https://bitbucket.org/matthew-scharley/matt.scharley.me" This website
+
+    li
+      label Links
+    li
+      a href="http://careers.stackoverflow.com/mscharley" Stackoverflow Careers (CV)
+
+    li
+      label Find me
+
+  section.social
+    - if wrapper_class == 'side-nav'
+      ul class="#{wrapper_class} icons"
+        == include 'navigation/social'
+      ul class="#{wrapper_class}"
+        li
+          a href="#" data-reveal-id="more-social-links" And more...
+      #more-social-links.reveal-modal data={reveal: nil}
+        ul class="#{wrapper_class}"
+          == include 'navigation/social_full'
+        a.close-reveal-modal &#215;
+    - else
+      ul class="#{wrapper_class}"
+        == include 'navigation/social_full'
