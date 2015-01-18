@@ -1,8 +1,3 @@
----
-layout: default
-change_frequency: weekly
----
-
 # About me
 
 Hi, my name is Matthew Scharley. I'm a Drupal consultant and general web programmer based out of Melbourne, Australia.

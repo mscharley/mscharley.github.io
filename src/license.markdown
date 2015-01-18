@@ -1,16 +1,10 @@
----
-layout: default
-title: Licensing Information
-priority: 0.2
----
-
 {{ page.title }}
 ================
 
 Source
 ------
 
-You may access the source of this website at [GitHub][github-source].
+You may access the source of this website at [Bitbucket][source].
 References to files and directories in the rest of this document are
 refering to files and directories in this source distribution.
 
@@ -50,5 +44,5 @@ released under an MIT license. See below for details:
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 > THE SOFTWARE.
 
-  [github-source]: http://github.com/mscharley/matt.scharley.me
+  [source]: https://bitbucket.org/matthew-scharley/matt.scharley.me
   [cc-license]: http://creativecommons.org/licenses/by-nc-sa/3.0/au/
