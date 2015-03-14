@@ -10,9 +10,14 @@ end
 desc "Builds everything"
 task :default => [:clean, :build]
 
-desc "Compiles site with Usmu for testing"
+desc "Compiles site with Usmu"
 task :build do
   bundle_exec 'usmu', 'generate', '--log', 'build.log'
+end
+
+desc "Serves website locally for testing"
+task :serve do
+  bundle_exec 'usmu', 'serve'
 end
 
 desc "Cleans out the old site"

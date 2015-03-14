@@ -1,51 +1,20 @@
 @charset "UTF-8";
-@import "settings";
 
-@import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/breadcrumbs",
-  "foundation/components/button-groups",
-  "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-  "foundation/components/forms",
-  "foundation/components/grid",
-  "foundation/components/block-grid",
-  "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-  "foundation/components/reveal",
-  "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switch",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-  "foundation/components/type",
-  "foundation/components/offcanvas",
-  "foundation/components/visibility"
-;
+// Bourbon + Neat.
+@import 'bourbon/bourbon';
+@import 'grid-settings';
+@import 'neat/neat';
+@import 'base/base';
 
-@import 'compass/css3';
+// Our own settings files.
+@import 'fonts';
+@import 'solarized';
 @import 'syntax';
 
-@media #{$small-only} {
+@include media($small-screen-only) {
   // Account for the fixed top-bar
   section.main-section {
-    padding-top: $tabbar-height;
+    //padding-top: $tabbar-height;
   }
 }
 
@@ -60,7 +29,7 @@ code {
 ul, ol {
   li {
     ul, ol {
-      margin-bottom: 0.5 * $paragraph-margin-bottom;
+      margin-bottom: 0.5 * $small-spacing;
     }
   }
 }
@@ -72,7 +41,7 @@ header {
 }
 
 .button {
-  font-family: $header-font-family;
+  font-family: $heading-font-family;
   text-transform: uppercase;
 }
 
@@ -84,7 +53,7 @@ header {
   clip: rect(1px, 1px, 1px, 1px);
   padding: rem-calc(10);
   z-index: 9999;
-  @include border-radius(0 0 rem-calc(10) 0);
+  border-radius: 0 0 rem-calc(10) 0;
 
   &:focus {
     bottom: auto;
@@ -106,7 +75,7 @@ header {
 
     li {
       label {
-        font-family: $header-font-family;
+        font-family: $heading-font-family;
         text-transform: uppercase;
         font-size: 110%;
         color: $base1;
@@ -117,6 +86,7 @@ header {
     .social {
       padding-bottom: rem-calc(32);
 
+      /*
       ul.icons {
         @include block-grid(
           $per-row: 3,
@@ -141,6 +111,7 @@ header {
           }
         }
       }
+      */
     }
   }
 }
@@ -151,6 +122,7 @@ header {
   }
 }
 
+/*
 #more-social-links {
   ul {
     @include block-grid(
@@ -175,16 +147,17 @@ header {
     line-height: 0.6;
   }
 }
+*/
 
 #page-wrapper {
   background: $base3;
   color: $base00;
-  padding-bottom: 3 * $paragraph-margin-bottom;
+  padding-bottom: 3 * $small-spacing;
 }
 
 article#main {
   nav.recent {
-    margin-bottom: $paragraph-margin-bottom;
+    margin-bottom: $small-spacing;
 
     .previous, .next {
       @include clearfix;
@@ -230,7 +203,7 @@ article#main {
 }
 
 nav.tags {
-  margin-bottom: $paragraph-margin-bottom;
+  margin-bottom: $small-spacing;
 
   > * {
     vertical-align: middle;
@@ -250,6 +223,7 @@ nav.tags {
   }
 }
 
+/*
 .tag-listing {
   ul {
     @include block-grid(
@@ -263,7 +237,7 @@ nav.tags {
     }
   }
 
-  @media #{$medium-only} {
+  @include media($medium-screen-only) {
     ul {
       @include block-grid(
         $per-row: 3
@@ -271,7 +245,7 @@ nav.tags {
     }
   }
 
-  @media #{$large-up} {
+  @include media($large-screen-only) {
     ul {
       @include block-grid(
         $per-row: 4
@@ -279,13 +253,14 @@ nav.tags {
     }
   }
 }
+*/
 
 #footer {
-  padding: $paragraph-margin-bottom 0;
+  padding: $small-spacing 0;
 
   .copyright {
     @include clearfix;
-    margin-bottom: $paragraph-margin-bottom;
+    margin-bottom: $small-spacing;
 
     .license-logo {
       float: left;
@@ -298,7 +273,7 @@ nav.tags {
 
   footer {
     text-align: right;
-    font-size: $small-font-size;
+    font-size: 0.7 * $base-font-size;
   }
 }
 

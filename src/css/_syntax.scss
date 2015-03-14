@@ -1,11 +1,11 @@
 .highlight {
   padding: 0.3em;
-  margin-bottom: $paragraph-margin-bottom;
+  margin-bottom: $small-spacing;
   overflow: auto;
-  line-height: $paragraph-line-height;
+  line-height: $base-line-height;
   background: $base2;
-  @media #{$medium-up} {
-    max-height: 10 * $paragraph-line-height * 1em;
+  @include media($medium-screen-up) {
+    max-height: 10 * $base-line-height * 1em;
   }
 
   pre {

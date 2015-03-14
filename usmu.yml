@@ -11,8 +11,6 @@ exclude:
 - '**/.git*'
 # Don't parse Sass partials directly
 - '**/_*.s[ca]ss'
-# No Compass abilities
-- css/app.scss
 
 default meta:
   layout: default
@@ -45,3 +43,4 @@ plugin:
   s3:
     region: us-east-1
     bucket: matt.scharley.me
+    reduced redundancy: true
