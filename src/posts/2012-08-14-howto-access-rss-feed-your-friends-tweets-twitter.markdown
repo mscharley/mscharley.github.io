@@ -1,7 +1,6 @@
 ---
 title: How to access your friends tweets on Twitter via RSS
 date: 2012-08-14 11:19:00
-layout: post
 tags:
 - twitter
 - php

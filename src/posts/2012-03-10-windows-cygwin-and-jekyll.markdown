@@ -1,6 +1,5 @@
 ---
 title: Windows, Cygwin and Jekyll
-layout: post
 updated: 2014-03-10 23:56:00
 tags:
 - cygwin

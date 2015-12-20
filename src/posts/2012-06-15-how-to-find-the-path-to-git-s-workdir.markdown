@@ -2,7 +2,6 @@
 title: How to find the path to git's workdir
 date: 2012-06-15 18:06:27
 updated: 2012-06-22 14:30:00
-layout: post
 tags:
 - git
 ---

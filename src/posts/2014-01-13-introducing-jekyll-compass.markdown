@@ -1,7 +1,6 @@
 ---
 title: Introducing jekyll-compass
 date: 2014-01-13 21:14:00
-layout: post
 tags:
 - compass
 - sass

@@ -1,7 +1,6 @@
 ---
 title: Creating Inline SVG backgrounds with PNG sprites as fallbacks using Compass
 date: 2013-11-02 17:21:00
-layout: post
 tags:
 - compass
 - sass

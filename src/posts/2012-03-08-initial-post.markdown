@@ -1,6 +1,5 @@
 ---
 title: Hello World!
-layout: post
 ---
 
 Everyone writes one of these, right? Welcome, welcome, yada yada, all that sort of thing.

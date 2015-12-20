@@ -2,7 +2,6 @@
 title: Using PulseAudio and multiple sound devices
 date: 2012-03-30 11:11:02
 updated: 2012-04-11 15:44:02
-layout: post
 tags:
 - linux
 - pulseaudio

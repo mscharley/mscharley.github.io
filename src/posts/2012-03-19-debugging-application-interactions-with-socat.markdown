@@ -2,7 +2,6 @@
 title: Debugging UNIX sockets with socat
 date: 2012-03-19 10:02:01
 updated: 2012-03-23 13:41:01
-layout: post
 tags:
 - socat
 - networking
