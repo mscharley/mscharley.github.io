@@ -24,7 +24,7 @@ desc 'Cleans out the old site'
 task :clean do
   rm_rf 'site'
   rm_rf '.sass-cache'
-  rm 'build.log'
+  rm 'build.log' if File.exist? 'build.log'
 end
 
 desc 'Installs and sets up dependencies'

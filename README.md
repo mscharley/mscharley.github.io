@@ -3,5 +3,5 @@ This is the source code for my blog. You can view the live site at http://matt.s
 To build this locally you will need to:
 
     bundle install
-    rake install
-    usmu generate
+    npm install bower
+    rake install build
