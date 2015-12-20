@@ -1,12 +1,3 @@
----
-title: Windows, Cygwin and Jekyll
-updated: 2014-03-10 23:56:00
-tags:
-- cygwin
-- windows
-- jekyll
----
-
 A bit of background
 -------------------
 

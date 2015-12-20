@@ -1,13 +1,3 @@
----
-title: Using PulseAudio and multiple sound devices
-date: 2012-03-30 11:11:02
-updated: 2012-04-11 15:44:02
-tags:
-- linux
-- pulseaudio
-- sound
----
-
 **DISCLAIMER**: Most of this post was cobbled together from this [related question on Super User][su-post],
 but I had some extra flavour of my own to add. If you found this useful, you should
 jump over there and vote them up too.

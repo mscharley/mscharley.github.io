@@ -1,12 +1,3 @@
----
-title: "[JS] HOWTO: Monkey patch IE for support for Function.name"
-updated: 2012-06-08 22:49:00
-tags:
-- js
-- javascript
-- ie
----
-
 One of the better [ways of detecting an object's type name in Javascript][so-name-of-object]
 is `obj.constructor.name`. It's also the way that the Drupal states API does it.
 Unfortunately, Internet Explorer doesn't support the non-standardised, though

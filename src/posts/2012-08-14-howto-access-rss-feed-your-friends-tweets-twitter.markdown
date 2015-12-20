@@ -1,12 +1,4 @@
----
-title: How to access your friends tweets on Twitter via RSS
-date: 2012-08-14 11:19:00
-tags:
-- twitter
-- php
----
-
-This is a quick note to get some information back out in the public that 
+This is a quick note to get some information back out in the public that
 was lost when I moved my website. Hopefully that won't happen again now.
 
 Quite a while back now Twitter disabled simple authentication. Apparently 

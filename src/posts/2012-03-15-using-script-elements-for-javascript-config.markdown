@@ -1,11 +1,3 @@
----
-title: Using script elements for JavaScript config
-date: 2012-03-15 14:56:52
-tags:
-- js
-- javascript
----
-
 Just a few words to get something interesting out there that I saw today.
 
 The following sparked some ideas in me. I'll probably post up a few things about

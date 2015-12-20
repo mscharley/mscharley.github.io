@@ -1,12 +1,3 @@
----
-title: Introducing jekyll-compass
-date: 2014-01-13 21:14:00
-tags:
-- compass
-- sass
-- jekyll
----
-
 That's right, [I wrote a plugin for Jekyll][jekyll-compass]. Jekyll is the static site generator I use for this very
 website, and I was sick of orchestrating Compass around Jekyll. [Now, Compass sings to my own tune][readme].
 Specifically, this is a generator plugin for Jekyll which will take your directory of Sass or Compass files in a `_sass`

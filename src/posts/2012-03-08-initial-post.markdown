@@ -1,7 +1,3 @@
----
-title: Hello World!
----
-
 Everyone writes one of these, right? Welcome, welcome, yada yada, all that sort of thing.
 
 First up, I want to get into what this blog will be about. This site will mostly be a

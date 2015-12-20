@@ -1,11 +1,3 @@
----
-title: How to find the path to git's workdir
-date: 2012-06-15 18:06:27
-updated: 2012-06-22 14:30:00
-tags:
-- git
----
-
 For a while now, I've wanted to add git's working directory to my prompt. My work is such
 that I have many similar git repositories on my PC (multiple installations of [Drupal][drupal]).
 Often, I find myself wading through at least two of them at once which quickly leads to

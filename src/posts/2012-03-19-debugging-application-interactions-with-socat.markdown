@@ -1,14 +1,4 @@
----
-title: Debugging UNIX sockets with socat
-date: 2012-03-19 10:02:01
-updated: 2012-03-23 13:41:01
-tags:
-- socat
-- networking
-- unix-sockets
----
-
-A while ago, I came across an interesting problem: how do you listen in on 
+A while ago, I came across an interesting problem: how do you listen in on
 UNIX sockets? For IP, there are tools like wireshark that will display in
 great detail all the network traffic that go through your system, but these
 tools can't listen in on UNIX sockets.

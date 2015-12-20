@@ -1,12 +1,3 @@
----
-title: Creating Inline SVG backgrounds with PNG sprites as fallbacks using Compass
-date: 2013-11-02 17:21:00
-tags:
-- compass
-- sass
-- svg
----
-
 Hey everyone, just thought I'd share a quick mixin I created for this website while doing the new social media buttons.
 
 ``` scss

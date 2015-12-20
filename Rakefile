@@ -1,10 +1,8 @@
 
 def bundle_exec(*args)
+  trap :INT do; end
   sh 'bundle', 'exec', *args
-end
-
-def exec_bundle_exec(*args)
-  exec 'bundle', 'exec', *args
+  trap :INT, 'DEFAULT'
 end
 
 desc 'Builds everything'

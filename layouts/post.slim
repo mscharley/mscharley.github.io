@@ -12,13 +12,13 @@ article#main.post
           a href="mailto:#{ site['author']['email'] }" #{ site['author']['name'] }
       | at
       span.date
-        | #{{ page.date | date: '%A, %d %B %Y - %H:%M' }}
+        | #{{ page['date'].strftime('%A, %d %B %Y - %H:%M')}}
     - if page['updated']
       p.updated-time
         | Last updated:
         span.date
-          | #{{page['updated'] | date: '%A, %d %B %Y - %H:%M'}}
-    == include navigation/tag_list, tags: page['tags']
+          | #{{page['updated'].strftime('%A, %d %B %Y - %H:%M')}}
+    == include 'navigation/tag_list', tags: page['tags'] || []
 
   | #{{content}}
 
@@ -34,4 +34,4 @@ article#main.post
           a href="#{page.next.url}" page.next.title
       - else
         .small-6
-    == include discus
+    == include 'disqus', page: page

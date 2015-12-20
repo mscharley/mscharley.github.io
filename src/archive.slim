@@ -1,5 +1,8 @@
 
-/ TODO: Update this when we have post groupings
-- for post in site['posts', default: []]
-  time datetime='{{post.date | date: "%Y-%m-%d"}}' {{post.date | date: "%d/%m/%Y"}}
-  a href="{{post.url}}" {{ post.title }}
+p Hello world
+
+ul
+  - for page in collection('posts').pages.reverse
+    li
+      time datetime='#{page['date'].strftime('%Y-%m-%d')}' #{{page['date'].strftime('%d/%m/%y')}}
+      a href="#{url page}" #{{page['title']}}

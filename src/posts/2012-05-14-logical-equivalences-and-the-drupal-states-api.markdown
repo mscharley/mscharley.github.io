@@ -1,13 +1,3 @@
----
-title: Logical equivalences and the Drupal States API
-date: 2012-05-14 14:34:33
-tags:
-- drupal
-- drupal-7
-- drupal-states-api
-- logic
----
-
 We recently ran into a bug in our code with relation to the States API. We had
 the following code:
 
