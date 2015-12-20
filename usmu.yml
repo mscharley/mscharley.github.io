@@ -45,3 +45,6 @@ plugin:
     base url: http://matt.scharley.me/
     filename: sitemap.xml
     priority: 0.5
+
+serve:
+  port: 3000
