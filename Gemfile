@@ -6,6 +6,8 @@ gem 'usmu-s3', '~> 1.0'
 gem 'usmu-sitemap', '~> 1.0'
 
 # Extra templating options
+gem 'redcarpet'
+gem 'pygments.rb'
 gem 'sass'
 gem 'compass'
 gem 'bourbon'

@@ -3,12 +3,12 @@
 source: src
 
 exclude:
+- '**/.*'
 - assets/fastclick/
 - assets/modernizr/media/
 - assets/foundation/scss/
 - 'assets/**/{test,tests,src}/'
 - '**/bower.json'
-- '**/.*'
 # Don't parse Sass partials directly
 - '**/_*.s[ca]ss'
 
@@ -24,13 +24,15 @@ disqus:
   shortname: msme
 
 redcarpet:
-  extensions:
-  - footnotes
-  - highlight
-  - underline
-  - smart
-  - space_after_headers
-  - strikethrough
+  :footnotes: true
+  :fenced_code_blocks: true
+  :highlight: true
+  :underline: true
+  :smart: true
+  :space_after_headers: true
+  :strikethrough: true
+  :smartypants: true
+  :pygments: true
 
 sass:
   :load_paths:

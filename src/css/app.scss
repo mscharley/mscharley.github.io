@@ -1,14 +1,15 @@
 @charset "UTF-8";
 
+// Our own settings files.
+@import 'solarized';
+
 // Bourbon + Neat.
 @import 'bourbon/bourbon';
 @import 'grid-settings';
 @import 'neat/neat';
 @import 'base/base';
 
-// Our own settings files.
-@import 'fonts';
-@import 'solarized';
+// Pygments syntax highlighting.
 @import 'syntax';
 
 @include media($small-screen-only) {

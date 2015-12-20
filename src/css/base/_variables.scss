@@ -1,6 +1,10 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic');
+@import '../foundation-icons';
+
+$base-font-family: 'Lora', serif;
+$heading-font-family: 'Open Sans', sans-serif;
 
 // Font Sizes
 $base-font-size: 1em;
