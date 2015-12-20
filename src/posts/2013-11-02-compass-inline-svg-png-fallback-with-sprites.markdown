@@ -6,7 +6,6 @@ tags:
 - compass
 - sass
 - svg
-priority: 0.7
 ---
 
 Hey everyone, just thought I'd share a quick mixin I created for this website while doing the new social media buttons.

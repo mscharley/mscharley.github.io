@@ -1,7 +1,6 @@
 ---
 title: Hello World!
 layout: post
-priority: 0.7
 ---
 
 Everyone writes one of these, right? Welcome, welcome, yada yada, all that sort of thing.

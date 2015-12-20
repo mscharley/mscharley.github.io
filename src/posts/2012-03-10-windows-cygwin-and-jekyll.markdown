@@ -6,7 +6,6 @@ tags:
 - cygwin
 - windows
 - jekyll
-priority: 0.7
 ---
 
 A bit of background

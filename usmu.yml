@@ -7,8 +7,8 @@ exclude:
 - assets/modernizr/media/
 - assets/foundation/scss/
 - 'assets/**/{test,tests,src}/'
-- '**/{,.}bower.json'
-- '**/.git*'
+- '**/bower.json'
+- '**/.*'
 # Don't parse Sass partials directly
 - '**/_*.s[ca]ss'
 
@@ -22,9 +22,6 @@ author:
   email: matt.scharley@gmail.com
 disqus:
   shortname: msme
-sitemap:
-  url: http://matt.scharley.me
-  filename: sitemap.xml
 
 redcarpet:
   extensions:
@@ -44,3 +41,7 @@ plugin:
     region: us-east-1
     bucket: matt.scharley.me
     reduced redundancy: true
+  sitemap:
+    base url: http://matt.scharley.me/
+    filename: sitemap.xml
+    priority: 0.5

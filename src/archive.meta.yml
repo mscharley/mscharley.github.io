@@ -1,3 +1,4 @@
 ---
 title: Blog posts
-change_frequency: weekly
+sitemap:
+  change frequency: weekly

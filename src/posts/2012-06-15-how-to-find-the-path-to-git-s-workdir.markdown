@@ -5,7 +5,6 @@ updated: 2012-06-22 14:30:00
 layout: post
 tags:
 - git
-priority: 0.7
 ---
 
 For a while now, I've wanted to add git's working directory to my prompt. My work is such

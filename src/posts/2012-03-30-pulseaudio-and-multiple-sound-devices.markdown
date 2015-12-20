@@ -7,7 +7,6 @@ tags:
 - linux
 - pulseaudio
 - sound
-priority: 0.7
 ---
 
 **DISCLAIMER**: Most of this post was cobbled together from this [related question on Super User][su-post],

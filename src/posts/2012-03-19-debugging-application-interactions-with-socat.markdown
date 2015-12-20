@@ -7,7 +7,6 @@ tags:
 - socat
 - networking
 - unix-sockets
-priority: 0.7
 ---
 
 A while ago, I came across an interesting problem: how do you listen in on 

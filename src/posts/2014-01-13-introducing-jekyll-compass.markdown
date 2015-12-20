@@ -6,7 +6,6 @@ tags:
 - compass
 - sass
 - jekyll
-priority: 0.7
 ---
 
 That's right, [I wrote a plugin for Jekyll][jekyll-compass]. Jekyll is the static site generator I use for this very

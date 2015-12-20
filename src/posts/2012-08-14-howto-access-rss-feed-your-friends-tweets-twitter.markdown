@@ -5,7 +5,6 @@ layout: post
 tags:
 - twitter
 - php
-priority: 0.7
 ---
 
 This is a quick note to get some information back out in the public that 
