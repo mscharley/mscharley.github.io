@@ -86,5 +86,5 @@ Windows using the latest version of Jekyll.
 [gh-posix-spawn]: https://github.com/rtomayko/posix-spawn/tree/
 [msword]: http://en.wikipedia.org/wiki/Microsoft_Word
 [pygments]: http://pygments.org/download/
-[rvm]: http://beginrescueend.com/
+[rvm]: http://rvm.io/
 [setuptools]: http://peak.telecommunity.com/dist/ez_setup.py
