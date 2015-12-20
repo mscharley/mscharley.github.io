@@ -20,4 +20,4 @@ Better navigation and more features will be forthcoming, but I wanted to get a v
 as soon as possible so I can get back into this. I really enjoyed it last time around,
 and hopefully you'll find something of use here.
 
-  [source]: http://github.com/mscharley/mscharley.github.com/
+  [source]: https://bitbucket.org/mscharley/matt.scharley.me
