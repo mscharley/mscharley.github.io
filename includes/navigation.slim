@@ -1,5 +1,5 @@
 nav.site
-  ul class=wrapper_class
+  ul
     li
       label Site nav
     li
@@ -25,16 +25,11 @@ nav.site
       label Find me
 
   section.social
-    - if wrapper_class == 'side-nav'
-      ul class="#{wrapper_class} icons"
-        == include 'navigation/social'
-      ul class="#{wrapper_class}"
-        li
-          a href="#" data-reveal-id="more-social-links" And more...
-      #more-social-links.reveal-modal data={reveal: nil}
-        ul class="#{wrapper_class}"
-          == include 'navigation/social_full'
-        a.close-reveal-modal &#215;
-    - else
-      ul class="#{wrapper_class}"
+    ul class="icons"
+      == include 'navigation/social'
+    ul
+      li
+        a href="#" And more...
+    #more-social-links
+      ul
         == include 'navigation/social_full'

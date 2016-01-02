@@ -4,9 +4,7 @@ source: src
 
 exclude:
 - '**/.*'
-- assets/fastclick/
 - assets/modernizr/media/
-- assets/foundation/scss/
 - 'assets/**/{test,tests,src}/'
 - '**/bower.json'
 # Don't parse Sass partials directly
@@ -26,17 +24,12 @@ disqus:
 redcarpet:
   :footnotes: true
   :fenced_code_blocks: true
-  :highlight: true
   :underline: true
   :smart: true
   :space_after_headers: true
   :strikethrough: true
   :smartypants: true
   :pygments: true
-
-sass:
-  :load_paths:
-  - src/assets/foundation/scss
 
 plugin:
   s3:
