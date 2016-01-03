@@ -1,12 +1,9 @@
-{{ page.title }}
-================
-
 Source
 ------
 
 You may access the source of this website at [Bitbucket][source].
 References to files and directories in the rest of this document are
-refering to files and directories in this source distribution.
+referring to files and directories in this source distribution.
 
 Content Licence
 ---------------
@@ -14,7 +11,7 @@ Content Licence
 The following directories and their contents are copyright Matthew Scharley
 and released under a [CC-BY-NC-SA][cc-license] license:
 
-* src/\_posts
+* src/posts
 * src/images
 
 Source Code Licence
