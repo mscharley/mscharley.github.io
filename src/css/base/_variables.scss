@@ -1,8 +1,8 @@
 // Typography
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@include font-face('foundation-icons', '/fonts/foundation-icons', $file-formats: eot svg ttf woff);
-@import '../foundation-icons';
+//@include font-face('foundation-icons', '/fonts/foundation-icons', $file-formats: eot svg ttf woff);
+//@import '../foundation-icons';
 
 $base-font-family: 'Lora', $georgia;
 $heading-font-family: 'Open Sans', $verdana;
