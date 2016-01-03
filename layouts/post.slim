@@ -3,20 +3,20 @@ article#main.post
     h1 #{{page['title']}}
     - if page['subtitle']
       h2 #{{page['subtitle']}}
-    p.posted.time
+    p.posted-time
       | Written by
       span.author
         - if page['author']
-          a href="mailto:#{ page['author']['email'] }" #{ page['author']['name'] }
+          a<> href="mailto:#{ page['author']['email'] }" #{ page['author']['name'] }
         - else
-          a href="mailto:#{ site['author']['email'] }" #{ site['author']['name'] }
-      | at
+          a<> href="mailto:#{ site['author']['email'] }" #{ site['author']['name'] }
+      ' at
       span.date
         | #{{ page['date'].strftime('%A, %d %B %Y - %H:%M')}}
     - if page['updated']
       p.updated-time
         | Last updated:
-        span.date
+        span.date<>
           | #{{page['updated'].strftime('%A, %d %B %Y - %H:%M')}}
     == include 'navigation/tag_list', tags: page['tags'] || []
 

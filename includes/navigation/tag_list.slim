@@ -1,6 +1,6 @@
-nav.tags
+nav.tag-list
   label Tags:
-  ul.button-group.radius
+  ul
     - for tag in tags
       li
         a.button.tiny.secondary href="/tagged/#{tag}.html" #{{tag}}

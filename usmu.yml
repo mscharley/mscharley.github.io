@@ -15,6 +15,7 @@ default meta:
 
 title: Matthew Scharley
 domain: matt.scharley.me
+repository: https://bitbucket.org/matthew-scharley/matt.scharley.me
 author:
   name: Matthew Scharley
   email: matt.scharley@gmail.com

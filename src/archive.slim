@@ -3,4 +3,4 @@ ul
   - for page in collection('posts').pages.sort {|a, b| a['date'] == b['date'] ? 0 : (a['date'] < b['date'] ? 1 : -1) }
     li
       time datetime='#{page['date'].strftime('%Y-%m-%d')}' #{{page['date'].strftime('%d/%m/%y')}}
-      a href="#{url page}" #{{page['title']}}
+      a< href="#{url page}" #{{page['title']}}

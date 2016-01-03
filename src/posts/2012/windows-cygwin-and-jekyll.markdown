@@ -20,7 +20,7 @@ those results will be.
 
 And so, tonight I got onto my computer, and it was booted into Windows. I wanted to
 hack on my blog for a bit. So I did what every Linux guy does first in Windows: 
-[Cygwin][cygwin] and Console2. Now, before I go any further, please don't misunderstand;
+[Cygwin][cygwin] and ConEmu. Now, before I go any further, please don't misunderstand;
 I love Cygwin. In much the same way that I love beating my head against a wall, because 
 it's often much the same feeling. However I do have a great respect for the people behind
 this project, because it's a great project, and when it's setup and working, it
@@ -32,7 +32,7 @@ How to get Jekyll working on Cygwin
 First, a list of things you will need, in order. If you can follow this list on your
 own, then the rest of this article should be redundant.
 
-*   [Cygwin][cygwin], optionally [Console2][console2]
+*   [Cygwin][cygwin], optionally [ConEmu][conemu] or [Console2][console2]
     *   Devel
         * gcc4
         * gcc4-g++
@@ -81,6 +81,7 @@ $ easy_install Pygments
 And we're done at this point. Congratulations! You can now edit your Jekyll blog on
 Windows using the latest version of Jekyll.
 
+[conemu]: https://github.com/Maximus5/ConEmu#readme
 [console2]: http://sourceforge.net/projects/console/
 [cygwin]: http://www.cygwin.com/
 [gh-posix-spawn]: https://github.com/rtomayko/posix-spawn/tree/

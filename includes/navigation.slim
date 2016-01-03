@@ -1,7 +1,6 @@
-nav.site
+nav#site-nav
+  h1 Site nav
   ul
-    li
-      label Site nav
     li
       a href="/" Home
     li
@@ -9,27 +8,20 @@ nav.site
     li
       a href="/tags.html" Tags
 
+  h1 Projects
+  ul
     li
-      label Projects
-    li
-      a href="https://github.com/mscharley/jekyll-compass#readme" jekyll-compass
+      a href="https://github.com/usmu/usmu" Usmu
     li
       a href="https://bitbucket.org/matthew-scharley/matt.scharley.me" This website
-
     li
-      label Links
+      del
+        a href="https://github.com/mscharley/jekyll-compass#readme" jekyll-compass
+
+  h1 Links
+  ul
     li
       a href="http://careers.stackoverflow.com/mscharley" Stackoverflow Careers (CV)
 
-    li
-      label Find me
-
-  section.social
-    ul class="icons"
-      == include 'navigation/social'
-    ul
-      li
-        a href="#" And more...
-    #more-social-links
-      ul
-        == include 'navigation/social_full'
+  h1 Find me
+  == include 'navigation/social'

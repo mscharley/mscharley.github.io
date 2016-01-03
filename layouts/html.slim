@@ -7,8 +7,7 @@ html
     title
       - if page['title']
         | #{page['title']} |
-      - else
-        | #{site['title']}
+      |  #{site['title']}
 
     link rel="alternative" type="application/atom+xml" title="RSS feed of blog posts" href="http://feeds.feedburner.com/mattscharleyme"
     link rel="canonical" href="http://#{site['domain']}#{page['url']}"
@@ -23,17 +22,16 @@ html
   body
     a href="#main-section" class="skip-nav" Skip to navigation
     section.main-section
-      #page-wrapper
-        #page.row
-          #site-nav
-            == include 'navigation'
-          .medium-9
-            | #{{content}}
+      .content
+        == include 'navigation'
+        | #{{content}}
 
-      #footer
-        .copyright
-          == include 'copyright'
-        footer
-          | Site last generated:
+      footer
+        hr width="80%" align="center"
+        == include 'copyright'
+        .site-generated
+          | Site last generated using
+          a<> href="https://github.com/usmu/usmu" usmu
+          | at:
           =<> Time.now.utc.strftime('%Y-%m-%dT%H:%M:%SZ')
-          a href="https://bitbucket.org/matthew-scharley/matt.scharley.me" [src]
+          a href="#{site['repository']}" [src]

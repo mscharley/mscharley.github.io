@@ -1,0 +1,19 @@
+doctype xml
+feed xmlns="http://www.w3.org/2005/Atom"
+  title #{{site['title']}}
+  link href="http://#{site['domain']}/"
+  link href="http://#{site['domain']}/atom.xml" rel="self"
+  updated #{{ Time.now.utc.strftime('%Y-%m-%dT%H:%M:%SZ') }}
+  id http://#{{site['domain']}}
+  author
+    name #{site['author', 'name']}
+    email #{site['author', 'email']}
+
+  - for page in collection('posts').pages.sort {|a, b| a['date'] == b['date'] ? 0 : (a['date'] < b['date'] ? 1 : -1) }
+    entry
+      title #{{page['title']}}
+      link href="http://#{{site['domain']}}#{url page}?utm_source=atom&amp;utm_medium=rss&amp;utm_campaign=atom"
+      updated #{{(page['updated'] || page['date']).utc.strftime('%Y-%m-%dT%H:%M:%SZ')}}
+      id http://#{{site['domain']}}#{{page.input_path}}
+      content type="html"
+        | <![CDATA[#{{page.render_content}}]]>

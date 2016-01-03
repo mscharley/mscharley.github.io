@@ -1,6 +1,5 @@
 /site
 /vendor
-Gemfile.lock
 /.bundle
 /build.log
 /node_modules

@@ -1,0 +1,15 @@
+.skip-nav {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: rem-calc(10);
+  z-index: 9999;
+  border-radius: 0 0 rem-calc(10) 0;
+
+  &:focus {
+    bottom: auto;
+    clip: auto;
+  }
+}
