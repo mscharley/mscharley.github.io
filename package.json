@@ -1,0 +1,18 @@
+{
+  "name": "mscharley.github.io",
+  "version": "1.0.0",
+  "description": "This is the source code for my blog. You can view the live site at http://matt.scharley.me/.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mscharley/mscharley.github.io.git"
+  },
+  "author": "Matthew Scharley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mscharley/mscharley.github.io/issues"
+  },
+  "homepage": "http://matt.scharley.me/",
+  "dependencies": {
+    "bower": "^1.7.2"
+  }
+}

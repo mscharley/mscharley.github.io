@@ -28,7 +28,8 @@ end
 desc 'Installs and sets up dependencies'
 task :install do
   sh 'bundle', 'install'
-  sh (File.exist?('node_modules') ? 'node_modules/bower/bin/bower' : 'bower'), 'install'
+  sh 'npm', 'install'
+  sh (File.exist?('node_modules') ? 'node_modules/.bin/bower' : 'bower'), 'install'
 end
 
 desc 'Deploy website to S3'
