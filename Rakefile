@@ -32,6 +32,6 @@ task :install do
 end
 
 desc 'Deploy website to S3'
-task :deploy => [:clean, :build] do
+task :deploy => [:build] do
   bundle_exec 'usmu', 's3', 'deploy'
 end
