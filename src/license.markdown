@@ -41,5 +41,5 @@ released under an MIT license. See below for details:
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 > THE SOFTWARE.
 
-  [source]: https://bitbucket.org/matthew-scharley/matt.scharley.me
+  [source]: https://github.com/mscharley/mscharley.github.io
   [cc-license]: http://creativecommons.org/licenses/by-nc-sa/3.0/au/
