@@ -39,6 +39,10 @@ body {
   }
 }
 
+#site-nav {
+  text-align: right;
+}
+
 hr[align="center"] {
   @include directional-property(margin, null, null auto);
 }
