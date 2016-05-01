@@ -4,7 +4,7 @@ source: src
 
 exclude:
 - '**/.*'
-- assets/modernizr/media/
+- 'assets/modernizr/media/'
 - 'assets/**/{test,tests,src}/'
 - '**/bower.json'
 # Don't parse Sass partials directly
@@ -22,7 +22,7 @@ author:
 disqus:
   shortname: msme
 
-redcarpet:
+redcarpet2:
   :footnotes: true
   :fenced_code_blocks: true
   :underline: true
