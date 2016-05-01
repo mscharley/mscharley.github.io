@@ -12,11 +12,12 @@ Usmu is a Tilt API client. This means that [it automatically supports any templa
 which is quite a lot. Out of the box Usmu ships with Slim for use with templates and Markdown via the redcarpet gem
 (or Kramdown for the JRuby folks).
 
-For the Github fans [there's already plans on making deploying to Github Pages simple][usmu-#33].
+~~For the Github fans [there's already plans on making deploying to Github Pages simple][usmu-#33].~~ [Github Pages support is live!][usmu-github-pages]
 
 If you're interested to see what an Usmu site looks like under the hood [you can check out the source for this website][msme].
 
   [usmu]: https://github.com/usmu/usmu
+  [usmu-github-pages]: https://github.com/usmu/usmu-github-pages
   [tilt-support]: https://github.com/rtomayko/tilt#readme
   [usmu-#33]: https://github.com/usmu/usmu/issues/33
   [msme]: https://github.com/mscharley/mscharley.github.io
