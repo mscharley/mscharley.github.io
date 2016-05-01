@@ -9,9 +9,9 @@ gem 'usmu-sitemap', '~> 1.0'
 gem 'redcarpet', '~> 3.0'
 gem 'pygments.rb', '~> 0.6'
 gem 'sass', '~> 3.3'
-gem 'bourbon', '~> 4.2'
-gem 'neat', '~> 1.7'
-gem 'bitters', '~> 1.1'
+gem 'bourbon', '4.2.6'
+gem 'neat', '1.7.2'
+gem 'bitters', '1.1.0'
 
 # Stuff for developing with.
-gem 'rake', '~> 10.4'
+gem 'rake', '~> 11.0'
