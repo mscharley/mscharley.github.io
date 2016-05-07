@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/mscharley
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://matt.scharley.me
+  * I am mscharley (https://keybase.io/mscharley) on keybase.
+  * I have a public key ASDd6oL_LNh1-phbbRQHNC6T63nQ9PZpvHQ4xoCSXKzBOQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101ee5e7713b011596948024513639f9fb3134af92c2886b8c52c393455a0d3b8b10a",
+            "host": "keybase.io",
+            "kid": "0120ddea82ff2cd875fa985b6d1407342e93eb79d0f4f669bc7438c680925cacc1390a",
+            "uid": "b880b204c2136ca7d3f1c8cc9ae94000",
+            "username": "mscharley"
+        },
+        "service": {
+            "hostname": "matt.scharley.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.15"
+    },
+    "ctime": 1462580291,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1462580243,
+        "hash": "08b0d2f6100e31e85d3e0b1910c815c7ed76fa129ce1bb7ee404f299c3411224dbab83beef069282e8696af4719519c991d48691edafaa186721a485afaacc1d",
+        "seqno": 458610
+    },
+    "prev": "cd3af1091b8090af9c552ee79346332de97576c358c7284c5630cc124d5b6c12",
+    "seqno": 15,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg3eqC/yzYdfqYW20UBzQuk+t50PT2abx0OMaAklyswTkKp3BheWxvYWTFAvl7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZWU1ZTc3MTNiMDExNTk2OTQ4MDI0NTEzNjM5ZjlmYjMxMzRhZjkyYzI4ODZiOGM1MmMzOTM0NTVhMGQzYjhiMTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZGRlYTgyZmYyY2Q4NzVmYTk4NWI2ZDE0MDczNDJlOTNlYjc5ZDBmNGY2NjliYzc0MzhjNjgwOTI1Y2FjYzEzOTBhIiwidWlkIjoiYjg4MGIyMDRjMjEzNmNhN2QzZjFjOGNjOWFlOTQwMDAiLCJ1c2VybmFtZSI6Im1zY2hhcmxleSJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoibWF0dC5zY2hhcmxleS5tZSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTUifSwiY3RpbWUiOjE0NjI1ODAyOTEsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ2MjU4MDI0MywiaGFzaCI6IjA4YjBkMmY2MTAwZTMxZTg1ZDNlMGIxOTEwYzgxNWM3ZWQ3NmZhMTI5Y2UxYmI3ZWU0MDRmMjk5YzM0MTEyMjRkYmFiODNiZWVmMDY5MjgyZTg2OTZhZjQ3MTk1MTljOTkxZDQ4NjkxZWRhZmFhMTg2NzIxYTQ4NWFmYWFjYzFkIiwic2Vxbm8iOjQ1ODYxMH0sInByZXYiOiJjZDNhZjEwOTFiODA5MGFmOWM1NTJlZTc5MzQ2MzMyZGU5NzU3NmMzNThjNzI4NGM1NjMwY2MxMjRkNWI2YzEyIiwic2Vxbm8iOjE1LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQAx8ozIafdOsJ8zNaaPyE9Yctk7L7ojHhXvqbyEvlirxws37qTPzlxvcA201wkJxwCvqqUOwuMPsooUSldISdwGoc2lnX3R5cGUgo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mscharley
+
+==================================================================
